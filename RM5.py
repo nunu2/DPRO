@@ -46,9 +46,9 @@ CMID = dd3.profile.mid
 
 Bot =[clientMID]
 Bots = [clientMID,dotsMID,ki1MID,ki2MID,ki3MID,ki4MID,ki5MID,AMID,BMID,CMID]
-creator = ["u33699ed350f7715fce593dd4e8a5d475"]
-Owner = ["u33699ed350f7715fce593dd4e8a5d475","uac3be5e86d7812e8cc28a6a312f52777"]
-admin = ["u33699ed350f7715fce593dd4e8a5d475","uac3be5e86d7812e8cc28a6a312f52777","ufb0c9b848c4359cb7ef4b6f021cd14e0"]
+creator = ["ud3a6bfda60a956cca0f58f2a14bae808"]
+Owner = ["ud3a6bfda60a956cca0f58f2a14bae808"]
+admin = ["ud3a6bfda60a956cca0f58f2a14bae808"]
 target = []
 
 clientProfile = client.getProfile()
@@ -678,7 +678,7 @@ def clientBot(op):
 							client.sendFooter(to, helpTranslate, icon, name, link)
 						
 						
-						elif cmd == "status":
+						elif cmd == "set":
 							try:
 								ret_ = "╭━━━━━━━━━━━━━━━━╮\n┃     SELFBOT STATUS\n┣•━━━━━━━━━━━━━━━━"
 								if settings["autoAdd"] == True: ret_ += "\n┣• Auto Add : ON"
