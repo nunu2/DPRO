@@ -427,8 +427,8 @@ def menuMedia():
                 "┣│✪│•" + key + "Play_Text" + "\n" + \
                 "┣│✪│•" + key + "Lyric_Text" + "\n" + \
                 "┣│✪│•" + key + "Yvideo_Text" + "\n" + \
-	            "╰═══════╬╬═══════╯" + "\n" + \
-	            "╭═══════╬╬═══════╮" + "\n" + \
+	        "╰═══════╬╬═══════╯" + "\n" + \
+	        "╭═══════╬╬═══════╮" + "\n" + \
                 "┃    DEDE SHOP CENTRE™" + "\n" + \
                 "╰━━━━━━━━━━━━━━━━╯"
 	return menuMedia
@@ -2596,7 +2596,7 @@ def clientBot(op):
 								settings["checkSticker"] = False
 								client.sendMessage(to, "➧ Check details sticker nonaktif")
 						
-						elif cmd == "me":
+						elif cmd == "คท":
 							dots.sendMention(to, "@!", [sender])
 							dots.sendContact(to, sender)
 							contact = client.getContact(sender)
