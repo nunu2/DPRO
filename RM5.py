@@ -293,11 +293,11 @@ def menuHelp():
                 "┣│✪│•" + key + "Setting\n" + \
                 "┣│✪│•" + key + "Group\n" + \
                 "┣│✪│•" + key + "Media\n" + \
-		        "┣│✪│•" + key + "Translate\n" + \
-		        "┣│✪│•" + key + "Pro key\n" + \
+		"┣│✪│•" + key + "Translate\n" + \
+		"┣│✪│•" + key + "Pro key\n" + \
                 "┣│✪│•" + key + "Menu\n" + \
-		        "╰═══════╬╬═══════╯" + "\n" + \
-		        "╭═══════╬╬═══════╮" + "\n" + \
+		"╰═══════╬╬═══════╯" + "\n" + \
+		"╭═══════╬╬═══════╮" + "\n" + \
                 "┃       DOTS AUTO BOT" + "\n" + \
                 "┃COPYRIGHT : DEDE SHOP" + "\n" + \
                 "╰━━━━━━━━━━━━━━━━╯"
@@ -313,12 +313,12 @@ def menuSelf():
                 "╰═══════╬╬═══════╯" + "\n" + \
                 "╭═══════╬╬═══════╮" + "\n" + \
                 "┣│✪│•" + key + "Turn off" + "\n" + \
-		        "┣│✪│•" + key + "Restart" + "\n" + \
-		        "┣│✪│•" + key + "Runtime" + "\n" + \
-		        "┣│✪│•" + key + "Speed" + "\n" + \
-		        "┣│✪│•" + key + "Status" + "\n" + \
-		        "┣│✪│•" + key + "Cpp" + "\n" + \
-		        "┣│✪│•" + key + "CName:_Text" + "\n" + \
+		"┣│✪│•" + key + "Restart" + "\n" + \
+		"┣│✪│•" + key + "Runtime" + "\n" + \
+		"┣│✪│•" + key + "Speed" + "\n" + \
+		"┣│✪│•" + key + "Status" + "\n" + \
+		"┣│✪│•" + key + "Cpp" + "\n" + \
+		"┣│✪│•" + key + "CName:_Text" + "\n" + \
                 "┣│✪│•" + key + "CBio:_Text" + "\n" + \
                 "┣│✪│•" + key + "Me" + "\n" + \
                 "┣│✪│•" + key + "MyMid" + "\n" + \
