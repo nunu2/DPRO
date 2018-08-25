@@ -2062,7 +2062,7 @@ def clientBot(op):
 													if not target in Owner:
 														if not target in admin:
 															try:
-																klist=[ki1,ki2,ki3,ki4,k5]
+																klist=[ki1,ki2,ki3,ki4,k5,ki6,ki7,ki8,ki9,ki10]
 																kicker=random.choice(klist)
 																kicker.kickoutFromGroup(msg.to,[target])
 																print (msg.to,[g.mid])
@@ -2121,7 +2121,7 @@ def clientBot(op):
 								ki1.updateGroup(G)
 								G.preventedJoinByTicket(G)
 								ki1.updateGroup(G)
-								ki.sendMessage(to, "➧ All Auto Bot Protect On\n➧ Siap melayani bos semuanya...")
+								ki1.sendMessage(to, "➧ All Auto Bot Protect On\n➧ Siap melayani bos semuanya...")
 								
 						elif cmd in ["public in"]:
 							if msg._from in Owner:
@@ -2137,7 +2137,7 @@ def clientBot(op):
 								ki1.updateGroup(G)
 								G.preventedJoinByTicket(G)
 								ki1.updateGroup(G)
-								dots.sendMessage(to, "➧ Public Bot On...\n➧ Ketik Menu Untuk Bantuan")
+								random.sendMessage(to, "➧ Public Bot On...\n➧ Ketik Menu Untuk Bantuan")
 						if cmd in ["public out"]:
 							if msg._from in Owner:
 								dots.leaveGroup(msg.to)
