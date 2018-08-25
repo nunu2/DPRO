@@ -21,13 +21,15 @@ ki4 = LINE("bot3su2019@gmail.com","nunu_kap2019")
 print ("===============[PRO 4 LOGIN SUKSES]===============\n")
 ki5 = LINE("bot4su2019@gmail.com","nunu_kap2019")
 print ("===============[PRO 5 LOGIN SUKSES]===============\n")
-dots = LINE("bot5su2019@gmail.com","nunu_kap2019")
+ki6 = LINE("bot5su2019@gmail.com","nunu_kap2019")
 print ("==============[PUBLIC BOT LOGIN SUKSES]==============\n")
-dd1 = LINE("bot6su2019@gmail.com","nunu_kap2019")
+ki7 = LINE("bot6su2019@gmail.com","nunu_kap2019")
 print ("===============[LEADER 1 LOGIN SUKSES]===============\n")
-dd2 = LINE("")
+ki8 = LINE("")
 print ("===============[LEADER 2 LOGIN SUKSES]===============\n")
-dd3 = LINE("")
+ki9 = LINE("")
+print ("===============[LEADER 3 LOGIN SUKSES]===============\n\n======================================\n        AUTO PROTECT BOT LINE\n            CREATOR : DEDE\n           DEDE SHOP CENTRE\n======================================\n\n[DOTS AUTO PROTECT BOT START]")
+ki10 = LINE("")
 print ("===============[LEADER 3 LOGIN SUKSES]===============\n\n======================================\n        AUTO PROTECT BOT LINE\n            CREATOR : DEDE\n           DEDE SHOP CENTRE\n======================================\n\n[DOTS AUTO PROTECT BOT START]")
 
 
@@ -3046,6 +3048,27 @@ def clientBot(op):
 						invsend = 0
 						Ticket = random.choice(GUE).reissueGroupTicket(op.param1)
 						client.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki1.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki10.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
 						G = random.choice(GUE).getGroup(op.param1)
 						G.preventedJoinByTicket = True
 						random.choice(GUE).updateGroup(G)
@@ -3125,7 +3148,7 @@ def clientBot(op):
 						settings["blacklist"][op.param2] = True
 						
 				if op.param3 in ki2MID:
-					if op.param2 in clientMID:
+					if op.param2 in ki1MID:
 						G = random.choice(GUE).getGroup(op.param1)
 						random.choice(GUE).kickoutFromGroup(op.param1,[op.param2])
 						G.preventedJoinByTicket = False
@@ -3196,7 +3219,7 @@ def clientBot(op):
 						settings["blacklist"][op.param2] = True
 						
 				if op.param3 in ki3MID:
-					if op.param2 in clientMID:
+					if op.param2 in ki2MID:
 						G = random.choice(GUE).getGroup(op.param1)
 						random.choice(GUE).kickoutFromGroup(op.param1,[op.param2])
 						G.preventedJoinByTicket = False
@@ -3267,7 +3290,7 @@ def clientBot(op):
 						settings["blacklist"][op.param2] = True
 						
 				if op.param3 in ki4MID:
-					if op.param2 in clientMID:
+					if op.param2 in ki3MID:
 						G = random.choice(GUE).getGroup(op.param1)
 						random.choice(GUE).kickoutFromGroup(op.param1,[op.param2])
 						G.preventedJoinByTicket = False
@@ -3275,6 +3298,27 @@ def clientBot(op):
 						invsend = 0
 						Ticket = random.choice(GUE).reissueGroupTicket(op.param1)
 						ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						clinet.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki1.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki10.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
 						G = random.choice(GUE).getGroup(op.param1)
 						G.preventedJoinByTicket = True
 						random.choice(GUE).updateGroup(G)
@@ -3288,6 +3332,27 @@ def clientBot(op):
 						invsend = 0
 						Ticket = random.choice(GUE).reissueGroupTicket(op.param1)
 						ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						clinet.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki1.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki10.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
 						G = random.choice(GUE).getGroup(op.param1)
 						G.preventedJoinByTicket = True
 						random.choice(GUE).updateGroup(G)
@@ -3296,7 +3361,7 @@ def clientBot(op):
 						settings["blacklist"][op.param2] = True
 						
 				if op.param3 in ki5MID:
-					if op.param2 in clientMID:
+					if op.param2 in ki4MID:
 						G = random.choice(GUE).getGroup(op.param1)
 						random.choice(GUE).kickoutFromGroup(op.param1,[op.param2])
 						G.preventedJoinByTicket = False
@@ -3304,6 +3369,27 @@ def clientBot(op):
 						invsend = 0
 						Ticket = random.choice(GUE).reissueGroupTicket(op.param1)
 						ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						clinet.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki1.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki10.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
 						G = random.choice(GUE).getGroup(op.param1)
 						G.preventedJoinByTicket = True
 						random.choice(GUE).updateGroup(G)
@@ -3317,6 +3403,27 @@ def clientBot(op):
 						invsend = 0
 						Ticket = random.choice(GUE).reissueGroupTicket(op.param1)
 						ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						clinet.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki1.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki10.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
 						G = random.choice(GUE).getGroup(op.param1)
 						G.preventedJoinByTicket = True
 						random.choice(GUE).updateGroup(G)
@@ -3324,15 +3431,36 @@ def clientBot(op):
 						random.choice(GUE).updateGroup(G)
 						settings["blacklist"][op.param2] = True
 						
-				if op.param3 in AMID:
-					if op.param2 in clientMID:
+				if op.param3 in ki6MID:
+					if op.param2 in ki5MID:
 						G = random.choice(GUE).getGroup(op.param1)
 						random.choice(GUE).kickoutFromGroup(op.param1,[op.param2])
 						G.preventedJoinByTicket = False
 						random.choice(GUE).updateGroup(G)
 						invsend = 0
 						Ticket = random.choice(GUE).reissueGroupTicket(op.param1)
-						dd1.acceptGroupInvitationByTicket(op.param1,Ticket)
+						ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						clinet.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki1.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki10.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
 						G = random.choice(GUE).getGroup(op.param1)
 						G.preventedJoinByTicket = True
 						random.choice(GUE).updateGroup(G)
@@ -3345,7 +3473,28 @@ def clientBot(op):
 						random.choice(GUE).updateGroup(G)
 						invsend = 0
 						Ticket = random.choice(GUE).reissueGroupTicket(op.param1)
-						dd1.acceptGroupInvitationByTicket(op.param1,Ticket)
+						ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						clinet.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki1.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki10.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
 						G = random.choice(GUE).getGroup(op.param1)
 						G.preventedJoinByTicket = True
 						random.choice(GUE).updateGroup(G)
@@ -3353,15 +3502,36 @@ def clientBot(op):
 						random.choice(GUE).updateGroup(G)
 						settings["blacklist"][op.param2] = True
 						
-				if op.param3 in BMID:
-					if op.param2 in clientMID:
+				if op.param3 in ki7MID:
+					if op.param2 in ki6MID:
 						G = random.choice(GUE).getGroup(op.param1)
 						random.choice(GUE).kickoutFromGroup(op.param1,[op.param2])
 						G.preventedJoinByTicket = False
 						random.choice(GUE).updateGroup(G)
 						invsend = 0
 						Ticket = random.choice(GUE).reissueGroupTicket(op.param1)
-						dd2.acceptGroupInvitationByTicket(op.param1,Ticket)
+						ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						clinet.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki1.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki10.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
 						G = random.choice(GUE).getGroup(op.param1)
 						G.preventedJoinByTicket = True
 						random.choice(GUE).updateGroup(G)
@@ -3374,22 +3544,64 @@ def clientBot(op):
 						random.choice(GUE).updateGroup(G)
 						invsend = 0
 						Ticket = random.choice(GUE).reissueGroupTicket(op.param1)
-						dd2.acceptGroupInvitationByTicket(op.param1,Ticket)
+						ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						clinet.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki1.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki10.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
 						G = random.choice(GUE).getGroup(op.param1)
 						G.preventedJoinByTicket = True
 						random.choice(GUE).updateGroup(G)
 						G.preventedJoinByTicket(G)
 						random.choice(GUE).updateGroup(G)
 						settings["blacklist"][op.param2] = True
-				if op.param3 in CMID:
-					if op.param2 in clientMID:
+				if op.param3 in ki8MID:
+					if op.param2 in ki7MID:
 						G = random.choice(GUE).getGroup(op.param1)
 						random.choice(GUE).kickoutFromGroup(op.param1,[op.param2])
 						G.preventedJoinByTicket = False
 						random.choice(GUE).updateGroup(G)
 						invsend = 0
 						Ticket = random.choice(GUE).reissueGroupTicket(op.param1)
-						dd3.acceptGroupInvitationByTicket(op.param1,Ticket)
+						ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						clinet.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki1.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki10.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
 						G = random.choice(GUE).getGroup(op.param1)
 						G.preventedJoinByTicket = True
 						random.choice(GUE).updateGroup(G)
@@ -3402,7 +3614,28 @@ def clientBot(op):
 						random.choice(GUE).updateGroup(G)
 						invsend = 0
 						Ticket = random.choice(GUE).reissueGroupTicket(op.param1)
-						dd3.acceptGroupInvitationByTicket(op.param1,Ticket)
+						ki8.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						clinet.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki1.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki2.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki4.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki6.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki7.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki3.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki9.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
+						ki10.acceptGroupInvitationByTicket(op.param1,Ticket)
+						time.sleep(0.0001)
 						G = random.choice(GUE).getGroup(op.param1)
 						G.preventedJoinByTicket = True
 						random.choice(GUE).updateGroup(G)
