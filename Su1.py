@@ -2429,10 +2429,10 @@ def clientBot(op):
 										random.choice(GUE).sendMessage(msg.to,"➧ Protect Invite Off")
 									else:
 										random.choice(GUE).sendMessage(msg.to,"➧ Protect Invite Off")
-#PUBLIC BOT START
+#PUBLIC BOT START~~~~~~~~~~~~~~~~เทส
 						elif cmd == "salam":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Wa alaikum salam kk\n➧ Semoga kk selalu dalam lindungan Allah\n➧ Serta selalu diberikan yg terbaik dr yang\n   paling baik\n\n➧ Amiin yaa robbal alamiin...")
+							random.sendMention(to, "@!", [sender])
+							random.sendMessage(to, "➧ Wa alaikum salam kk\n➧ Semoga kk selalu dalam lindungan Allah\n➧ Serta selalu diberikan yg terbaik dr yang\n   paling baik\n\n➧ Amiin yaa robbal alamiin...")
 						elif cmd == "assalamualaikum":
 							dots.sendMention(to, "@!", [sender])
 							dots.sendMessage(to, "➧ Wa alaikum salam kk\n➧ Semoga kk selalu dalam lindungan Allah\n➧ Serta selalu diberikan yg terbaik dr yang\n   paling baik\n\n➧ Amiin yaa robbal alamiin...")
@@ -2943,11 +2943,11 @@ def clientBot(op):
 								ret_ += "\n ➧ MID : {}".format(str(msg.contentMetadata["mid"]))
 								ret_ += "\n ➧ Bio : \n   {}".format(str(contact.statusMessage))
 								ret_ += "\n╭━━━━━━━━━━━━━━━━╮\n┃         DOTS AUTO BOT \n╰━━━━━━━━━━━━━━━━╯"
-								dots.sendMessage(to, str(ret_))
-								dots.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(str(contact.pictureStatus)))
-								dots.sendImageWithURL(to, cover)
+								random.sendMessage(to, str(ret_))
+								random.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(str(contact.pictureStatus)))
+								random.sendImageWithURL(to, cover)
 							except:
-								dots.sendMessage(to, "➧ Kontak tidak valid")
+								random.sendMessage(to, "➧ Kontak tidak valid")
 								
 					elif msg.contentType == 16:
 						if settings["checkPost"] == True:
@@ -2984,11 +2984,12 @@ def clientBot(op):
 									text = "\n ➧ Tulisan : {}".format(str(msg.contentMetadata["text"]))
 									ret_ += text
 								ret_ += "\n╭━━━━━━━━━━━━━━━━╮\n┃         DOTS AUTO BOT \n╰━━━━━━━━━━━━━━━━╯"
-								dots.sendMessage(to, str(ret_))
+								random.sendMessage(to, str(ret_))
 							except:
-								dots.sendMessage(to, "➧ Post tidak valid")
+								random.sendMessage(to, "➧ Post tidak valid")
 			except Exception as error:
 				logError(error)
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~เทส~~~~~~~~~
 #AUTO PROTECTION START
 		if op.type == 13:
 			if op.param2 not in Bots:
