@@ -2101,6 +2101,11 @@ def clientBot(op):
 								ki3.leaveGroup(msg.to)
 								ki4.leaveGroup(msg.to)
 								ki5.leaveGroup(msg.to)
+								ki6.leaveGroup(msg.to)
+								ki7.leaveGroup(msg.to)
+								ki8.leaveGroup(msg.to)
+								ki9.leaveGroup(msg.to)
+								ki10.leaveGroup(msg.to)
 								
 						elif cmd in ["pro in"]:
 							if msg._from in Owner:
@@ -2431,207 +2436,207 @@ def clientBot(op):
 										random.choice(GUE).sendMessage(msg.to,"➧ Protect Invite Off")
 #PUBLIC BOT START~~~~~~~~~~~~~~~~เทส
 						elif cmd == "salam":
-							random.sendMention(to, "@!", [sender])
-							random.sendMessage(to, "➧ Wa alaikum salam kk\n➧ Semoga kk selalu dalam lindungan Allah\n➧ Serta selalu diberikan yg terbaik dr yang\n   paling baik\n\n➧ Amiin yaa robbal alamiin...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Wa alaikum salam kk\n➧ Semoga kk selalu dalam lindungan Allah\n➧ Serta selalu diberikan yg terbaik dr yang\n   paling baik\n\n➧ Amiin yaa robbal alamiin...")
 						elif cmd == "assalamualaikum":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Wa alaikum salam kk\n➧ Semoga kk selalu dalam lindungan Allah\n➧ Serta selalu diberikan yg terbaik dr yang\n   paling baik\n\n➧ Amiin yaa robbal alamiin...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Wa alaikum salam kk\n➧ Semoga kk selalu dalam lindungan Allah\n➧ Serta selalu diberikan yg terbaik dr yang\n   paling baik\n\n➧ Amiin yaa robbal alamiin...")
 						elif cmd == "assalamu'alaikum":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Wa alaikum salam kk\n➧ Semoga kk selalu dalam lindungan Allah\n➧ Serta selalu diberikan yg terbaik dr yang\n   paling baik\n\n➧ Amiin yaa robbal alamiin...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Wa alaikum salam kk\n➧ Semoga kk selalu dalam lindungan Allah\n➧ Serta selalu diberikan yg terbaik dr yang\n   paling baik\n\n➧ Amiin yaa robbal alamiin...")
 						elif cmd == "asalamualaikum":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Wa alaikum salam kk\n➧ Semoga kk selalu dalam lindungan Allah\n➧ Serta selalu diberikan yg terbaik dr yang\n   paling baik\n\n➧ Amiin yaa robbal alamiin...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Wa alaikum salam kk\n➧ Semoga kk selalu dalam lindungan Allah\n➧ Serta selalu diberikan yg terbaik dr yang\n   paling baik\n\n➧ Amiin yaa robbal alamiin...")
 						elif cmd == "mikum":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Wa alaikum salam kk\n➧ Semoga kk selalu dalam lindungan Allah\n➧ Serta selalu diberikan yg terbaik dr yang\n   paling baik\n\n➧ Amiin yaa robbal alamiin...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Wa alaikum salam kk\n➧ Semoga kk selalu dalam lindungan Allah\n➧ Serta selalu diberikan yg terbaik dr yang\n   paling baik\n\n➧ Amiin yaa robbal alamiin...")
 						elif cmd == "pagi":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Selamat pagi juga kk \n➧ Semoga hari ini bs lbh baik \n   dr hr kemarin\n\n➧ Amiin...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Selamat pagi juga kk \n➧ Semoga hari ini bs lbh baik \n   dr hr kemarin\n\n➧ Amiin...")
 						elif cmd == "met pagi":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Selamat pagi juga kk \n➧ Semoga hari ini bs lbh baik \n   dr hr kemarin\n\n➧ Amiin...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Selamat pagi juga kk \n➧ Semoga hari ini bs lbh baik \n   dr hr kemarin\n\n➧ Amiin...")
 						elif cmd == "mat pagi":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Selamat pagi juga kk \n➧ Semoga hari ini bs lbh baik \n   dr hr kemarin\n\n➧ Amiin...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Selamat pagi juga kk \n➧ Semoga hari ini bs lbh baik \n   dr hr kemarin\n\n➧ Amiin...")
 						elif cmd == "selamat pagi":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Selamat pagi juga kk \n➧ Semoga hari ini bs lbh baik \n   dr hr kemarin\n\n➧ Amiin...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Selamat pagi juga kk \n➧ Semoga hari ini bs lbh baik \n   dr hr kemarin\n\n➧ Amiin...")
 						elif cmd == "pagi kk":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Selamat pagi juga kk \n➧ Semoga hari ini bs lbh baik \n   dr hr kemarin\n\n➧ Amiin...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Selamat pagi juga kk \n➧ Semoga hari ini bs lbh baik \n   dr hr kemarin\n\n➧ Amiin...")
 						elif cmd == "siang":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Met siang n met beraktifitas kk \n➧ Semoga selalu diberi kelancaran \n   n kemudahan di setiap apa yg kk kerjakan\n\n➧ Amiin...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Met siang n met beraktifitas kk \n➧ Semoga selalu diberi kelancaran \n   n kemudahan di setiap apa yg kk kerjakan\n\n➧ Amiin...")
 						elif cmd == "met siang":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Met siang n met beraktifitas kk \n➧ Semoga selalu diberi kelancaran \n   n kemudahan di setiap apa yg kk kerjakan\n\n➧ Amiin...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Met siang n met beraktifitas kk \n➧ Semoga selalu diberi kelancaran \n   n kemudahan di setiap apa yg kk kerjakan\n\n➧ Amiin...")
 						elif cmd == "mat siang":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Met siang n met beraktifitas kk \n➧ Semoga selalu diberi kelancaran \n   n kemudahan di setiap apa yg kk kerjakan\n\n➧ Amiin...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Met siang n met beraktifitas kk \n➧ Semoga selalu diberi kelancaran \n   n kemudahan di setiap apa yg kk kerjakan\n\n➧ Amiin...")
 						elif cmd == "selamat siang":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Met siang n met beraktifitas kk \n➧ Semoga selalu diberi kelancaran \n   n kemudahan di setiap apa yg kk kerjakan\n\n➧ Amiin...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Met siang n met beraktifitas kk \n➧ Semoga selalu diberi kelancaran \n   n kemudahan di setiap apa yg kk kerjakan\n\n➧ Amiin...")
 						elif cmd == "siang kk":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Met siang n met beraktifitas kk \n➧ Semoga selalu diberi kelancaran \n   n kemudahan di setiap apa yg kk kerjakan\n\n➧ Amiin...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Met siang n met beraktifitas kk \n➧ Semoga selalu diberi kelancaran \n   n kemudahan di setiap apa yg kk kerjakan\n\n➧ Amiin...")
 						elif cmd == "sore":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Met sore juga kk \n➧ Cepet mandi gih,,,udah sore kk...\n➧ Kk bau banget,,,taukkkkk...\n\n➧ Wakakakakakakakak...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Met sore juga kk \n➧ Cepet mandi gih,,,udah sore kk...\n➧ Kk bau banget,,,taukkkkk...\n\n➧ Wakakakakakakakak...")
 						elif cmd == "met sore":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Met sore juga kk \n➧ Cepet mandi gih,,,udah sore kk...\n➧ Kk bau banget,,,taukkkkk...\n\n➧ Wakakakakakakakak...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Met sore juga kk \n➧ Cepet mandi gih,,,udah sore kk...\n➧ Kk bau banget,,,taukkkkk...\n\n➧ Wakakakakakakakak...")
 						elif cmd == "mat sore":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Met sore juga kk \n➧ Cepet mandi gih,,,udah sore kk...\n➧ Kk bau banget,,,taukkkkk...\n\n➧ Wakakakakakakakak...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Met sore juga kk \n➧ Cepet mandi gih,,,udah sore kk...\n➧ Kk bau banget,,,taukkkkk...\n\n➧ Wakakakakakakakak...")
 						elif cmd == "selamat sore":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Met sore juga kk \n➧ Cepet mandi gih,,,udah sore kk...\n➧ Kk bau banget,,,taukkkkk...\n\n➧ Wakakakakakakakak...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Met sore juga kk \n➧ Cepet mandi gih,,,udah sore kk...\n➧ Kk bau banget,,,taukkkkk...\n\n➧ Wakakakakakakakak...")
 						elif cmd == "selamat sore semua":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Met sore juga kk \n➧ Cepet mandi gih,,,udah sore kk...\n➧ Kk bau banget,,,taukkkkk...\n\n➧ Wakakakakakakakak...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Met sore juga kk \n➧ Cepet mandi gih,,,udah sore kk...\n➧ Kk bau banget,,,taukkkkk...\n\n➧ Wakakakakakakakak...")
 						elif cmd == "malam":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Met malam n met rehat kk \n➧ Semoga yg kita kerjakan hari ini \n   menghasilkan sesuatu yg barokah...\n\n➧ Amiin...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Met malam n met rehat kk \n➧ Semoga yg kita kerjakan hari ini \n   menghasilkan sesuatu yg barokah...\n\n➧ Amiin...")
 						elif cmd == "met malam":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Met malam n met rehat kk \n➧ Semoga yg kita kerjakan hari ini \n   menghasilkan sesuatu yg barokah...\n\n➧ Amiin...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Met malam n met rehat kk \n➧ Semoga yg kita kerjakan hari ini \n   menghasilkan sesuatu yg barokah...\n\n➧ Amiin...")
 						elif cmd == "mat malam":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Met malam n met rehat kk \n➧ Semoga yg kita kerjakan hari ini \n   menghasilkan sesuatu yg barokah...\n\n➧ Amiin...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Met malam n met rehat kk \n➧ Semoga yg kita kerjakan hari ini \n   menghasilkan sesuatu yg barokah...\n\n➧ Amiin...")
 						elif cmd == "selamat malam":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Met malam n met rehat kk \n➧ Semoga yg kita kerjakan hari ini \n   menghasilkan sesuatu yg barokah...\n\n➧ Amiin...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Met malam n met rehat kk \n➧ Semoga yg kita kerjakan hari ini \n   menghasilkan sesuatu yg barokah...\n\n➧ Amiin...")
 						elif cmd == "met malam semua":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Met malam n met rehat kk \n➧ Semoga yg kita kerjakan hari ini \n   menghasilkan sesuatu yg barokah...\n\n➧ Amiin...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Met malam n met rehat kk \n➧ Semoga yg kita kerjakan hari ini \n   menghasilkan sesuatu yg barokah...\n\n➧ Amiin...")
 						elif cmd == "sepi":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Iya nih,,,sepi amat room nya...\n➧ Kali ajja dah pada kojom ama anuhnya\n➧ Makanya jangan ngejomblo teruss....\n➧ Biar ada temennya...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Iya nih,,,sepi amat room nya...\n➧ Kali ajja dah pada kojom ama anuhnya\n➧ Makanya jangan ngejomblo teruss....\n➧ Biar ada temennya...")
 						elif cmd == "sepi amat":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Iya nih,,,sepi amat room nya...\n➧ Kali ajja dah pada kojom ama anuhnya\n➧ Makanya jangan ngejomblo teruss....\n➧ Biar ada temennya...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Iya nih,,,sepi amat room nya...\n➧ Kali ajja dah pada kojom ama anuhnya\n➧ Makanya jangan ngejomblo teruss....\n➧ Biar ada temennya...")
 						elif cmd == "sepi amat roomnya":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Iya nih,,,sepi amat room nya...\n➧ Kali ajja dah pada kojom ama anuhnya\n➧ Makanya jangan ngejomblo teruss....\n➧ Biar ada temennya...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Iya nih,,,sepi amat room nya...\n➧ Kali ajja dah pada kojom ama anuhnya\n➧ Makanya jangan ngejomblo teruss....\n➧ Biar ada temennya...")
 						elif cmd == "sepi roomya":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Iya nih,,,sepi amat room nya...\n➧ Kali ajja dah pada kojom ama anuhnya\n➧ Makanya jangan ngejomblo teruss....\n➧ Biar ada temennya...")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Iya nih,,,sepi amat room nya...\n➧ Kali ajja dah pada kojom ama anuhnya\n➧ Makanya jangan ngejomblo teruss....\n➧ Biar ada temennya...")
 						elif cmd == "anjay":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Dihhh.... Ngomongnya yg sopan dong\n➧ Kagak malu apa di baca banyak orang")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Dihhh.... Ngomongnya yg sopan dong\n➧ Kagak malu apa di baca banyak orang")
 						elif cmd == "anjayy":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Dihhh.... Ngomongnya yg sopan dong\n➧ Kagak malu apa di baca banyak orang")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Dihhh.... Ngomongnya yg sopan dong\n➧ Kagak malu apa di baca banyak orang")
 						elif cmd == "njay":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Dihhh.... Ngomongnya yg sopan dong\n➧ Kagak malu apa di baca banyak orang")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Dihhh.... Ngomongnya yg sopan dong\n➧ Kagak malu apa di baca banyak orang")
 						elif cmd == "njir":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Dihhh.... Ngomongnya yg sopan dong\n➧ Kagak malu apa di baca banyak orang")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Dihhh.... Ngomongnya yg sopan dong\n➧ Kagak malu apa di baca banyak orang")
 						elif cmd == "njirr":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Dihhh.... Ngomongnya yg sopan dong\n➧ Kagak malu apa di baca banyak orang")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Dihhh.... Ngomongnya yg sopan dong\n➧ Kagak malu apa di baca banyak orang")
 						elif cmd == "njirrr":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Dihhh.... Ngomongnya yg sopan dong\n➧ Kagak malu apa di baca banyak orang")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Dihhh.... Ngomongnya yg sopan dong\n➧ Kagak malu apa di baca banyak orang")
 						elif cmd == "sue":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Apamu yg sueek kk...???\n➧ Atw sue ora jamu..??? Xixixixi")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Apamu yg sueek kk...???\n➧ Atw sue ora jamu..??? Xixixixi")
 						elif cmd == "suee":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Apamu yg sueek kk...???\n➧ Atw sue ora jamu..??? Xixixixi")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Apamu yg sueek kk...???\n➧ Atw sue ora jamu..??? Xixixixi")
 						elif cmd == "sueee":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Apamu yg sueek kk...???\n➧ Atw sue ora jamu..??? Xixixixi")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Apamu yg sueek kk...???\n➧ Atw sue ora jamu..??? Xixixixi")
 						elif cmd == "suek":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Apamu yg sueek kk...???\n➧ Atw sue ora jamu..??? Xixixixi")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Apamu yg sueek kk...???\n➧ Atw sue ora jamu..??? Xixixixi")
 						elif cmd == "suekk":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendMessage(to, "➧ Apamu yg sueek kk...???\n➧ Atw sue ora jamu..??? Xixixixi")
+							client.sendMention(to, "@!", [sender])
+							client.sendMessage(to, "➧ Apamu yg sueek kk...???\n➧ Atw sue ora jamu..??? Xixixixi")
 						
 						elif cmd == "menu":
 							helpPub = menuPub()
-							contact = dots.getContact(sender)
+							contact = client.getContact(sender)
 							icon = "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus)
 							name = contact.displayName
 							link = "https://timeline.line.me/post/_dZNo9tm3E3PH0dURm6N9Rf_pYxmFJO2uASn_y7Q/1153217318709030407"
-							dots.sendFooter(to, helpPub, icon, name, link)
+							client.sendFooter(to, helpPub, icon, name, link)
 						elif cmd == "translator":
 							helpTranslate = menuTranslate()
-							contact = dots.getContact(sender)
+							contact = client.getContact(sender)
 							icon = "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus)
 							name = contact.displayName
 							link = "https://timeline.line.me/post/_dZNo9tm3E3PH0dURm6N9Rf_pYxmFJO2uASn_y7Q/1153217318709030407"
-							dots.sendFooter(to, helpTranslate, icon, name, link)
+							client.sendFooter(to, helpTranslate, icon, name, link)
 						elif cmd == "info on":
 							if settings["checkContact"] == True:
-								dots.sendMessage(to, "➧ Check details contact aktif")
+								client.sendMessage(to, "➧ Check details contact aktif")
 							else:
 								settings["checkContact"] = True
-								dots.sendMessage(to, "➧ Check details contact aktif")
+								client.sendMessage(to, "➧ Check details contact aktif")
 						elif cmd == "info off":
 							if settings["checkContact"] == False:
-								dots.sendMessage(to, "➧ Check details contact nonaktif")
+								client.sendMessage(to, "➧ Check details contact nonaktif")
 							else:
 								settings["checkContact"] = False
-								dots.sendMessage(to, "➧ Check details contact nonaktif")
+								client.sendMessage(to, "➧ Check details contact nonaktif")
 						
 						elif cmd == "cst on":
 							if settings["checkSticker"] == True:
-								dots.sendMessage(to, "➧ Check details sticker aktif")
+								client.sendMessage(to, "➧ Check details sticker aktif")
 							else:
 								settings["checkSticker"] = True
-								dots.sendMessage(to, "➧ Check details sticker aktif")
+								client.sendMessage(to, "➧ Check details sticker aktif")
 						elif cmd == "cst off":
 							if settings["checkSticker"] == False:
-								dots.sendMessage(to, "➧ Check details sticker nonaktif")
+								client.sendMessage(to, "➧ Check details sticker nonaktif")
 							else:
 								settings["checkSticker"] = False
-								dots.sendMessage(to, "➧ Check details sticker nonaktif")
+								client.sendMessage(to, "➧ Check details sticker nonaktif")
 						
 						elif cmd == "me":
 							dots.sendMention(to, "@!", [sender])
 							dots.sendContact(to, sender)
-							contact = dots.getContact(sender)
-							cover = dots.getProfileCoverURL(sender)
-							dots.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
-							dots.sendImageWithURL(to, cover)
+							contact = client.getContact(sender)
+							cover = client.getProfileCoverURL(sender)
+							client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
+							client.sendImageWithURL(to, cover)
 						elif cmd == "myprofile":
-							contact = dots.getContact(sender)
-							cover = dots.getProfileCoverURL(sender)
+							contact = client.getContact(sender)
+							cover = client.getProfileCoverURL(sender)
 							result = "╭━━━━━━━━━━━━━━━━╮\n┃       DETAIL PROFILE\n╰━━━━━━━━━━━━━━━━╯"
 							result += "\n ➧  Display Name : \n   @!"
 							result += "\n ➧  Status Message : \n   {}".format(contact.statusMessage)
 							result += "\n╭━━━━━━━━━━━━━━━━╮\n┃         DOTS AUTO BOT \n╰━━━━━━━━━━━━━━━━╯"
-							dots.sendMention(to, result, [sender])
-							dots.sendMessage(to, "➧ Profil Picture")
-							dots.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
-							dots.sendMessage(to, "➧ Cover Picture")
-							dots.sendImageWithURL(to, cover)
+							client.sendMention(to, result, [sender])
+							client.sendMessage(to, "➧ Profil Picture")
+							client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
+							client.sendMessage(to, "➧ Cover Picture")
+							client.sendImageWithURL(to, cover)
 						elif cmd == "mymid":
-							contact = dots.getContact(sender)
-							dots.sendMention(to, "@!\n➧ Your Mid :\n   {}".format(contact.mid), [sender])
+							contact = client.getContact(sender)
+							client.sendMention(to, "@!\n➧ Your Mid :\n   {}".format(contact.mid), [sender])
 						elif cmd == "myname":
-							contact = dots.getContact(sender)
-							dots.sendMention(to, "@!\n➧ Your display name :\n   {}".format(contact.displayName), [sender])
+							contact = client.getContact(sender)
+							client.sendMention(to, "@!\n➧ Your display name :\n   {}".format(contact.displayName), [sender])
 						elif cmd == "mybio":
-							contact = dots.getContact(sender)
-							dots.sendMention(to, "➧ @!\n➧ Your Status Message :\n   {}".format(contact.statusMessage), [sender])
+							contact = client.getContact(sender)
+							client.sendMention(to, "➧ @!\n➧ Your Status Message :\n   {}".format(contact.statusMessage), [sender])
 						elif cmd == "mypic":
-							contact = dots.getContact(sender)
-							dots.sendMessage(to, "➧ Your Picture Covet :")
-							dots.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
+							contact = client.getContact(sender)
+							client.sendMessage(to, "➧ Your Picture Covet :")
+							client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
 						elif cmd == "myvid":
-							contact = dots.getContact(sender)
+							contact = client.getContact(sender)
 							if contact.videoProfile == None:
-								return dots.sendMessage(to, "➧ Anda tidak menggunakan video profile")
-							dots.sendVideoWithURL(to, "http://dl.profile.line-cdn.net/{}/vp".format(contact.pictureStatus))
+								return client.sendMessage(to, "➧ Anda tidak menggunakan video profile")
+							client.sendVideoWithURL(to, "http://dl.profile.line-cdn.net/{}/vp".format(contact.pictureStatus))
 						elif cmd == "mycover":
-							cover = dots.getProfileCoverURL(sender)
-							dots.sendMessage(to, "➧ Your Cover Picture :")
-							dots.sendImageWithURL(to, str(cover))
+							cover =client .getProfileCoverURL(sender)
+							client.sendMessage(to, "➧ Your Cover Picture :")
+							client.sendImageWithURL(to, str(cover))
 						elif cmd.startswith("getmid "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
@@ -2642,7 +2647,7 @@ def clientBot(op):
 									if mention["M"] not in lists:
 										lists.append(mention["M"])
 								for ls in lists:
-									dots.sendMention(to, "@! \n➧ Mid :\n   {}".format(ls), [ls])
+									client.sendMention(to, "@! \n➧ Mid :\n   {}".format(ls), [ls])
 						elif cmd.startswith("getname "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
@@ -2653,8 +2658,8 @@ def clientBot(op):
 									if mention["M"] not in lists:
 										lists.append(mention["M"])
 								for ls in lists:
-									contact = dots.getContact(ls)
-									dots.sendMention(to, "@! \n➧ Display Name :\n   {}".format(contact.displayName), [ls])
+									contact = client.getContact(ls)
+									client.sendMention(to, "@! \n➧ Display Name :\n   {}".format(contact.displayName), [ls])
 						elif cmd.startswith("getbio "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
@@ -2665,8 +2670,8 @@ def clientBot(op):
 									if mention["M"] not in lists:
 										lists.append(mention["M"])
 								for ls in lists:
-									contact = dots.getContact(ls)
-									dots.sendMention(to, "@! \n➧ Status Message :\n   {}".format(contact.statusMessage), [ls])
+									contact = client.getContact(ls)
+									client.sendMention(to, "@! \n➧ Status Message :\n   {}".format(contact.statusMessage), [ls])
 						elif cmd.startswith("getpic "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
@@ -2677,9 +2682,9 @@ def clientBot(op):
 									if mention["M"] not in lists:
 										lists.append(mention["M"])
 								for ls in lists:
-									contact = dots.getContact(ls)
-									dots.sendMessage(to, "➧ Picture Profile :")
-									dots.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
+									contact = client.getContact(ls)
+									client.sendMessage(to, "➧ Picture Profile :")
+									client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
 						elif cmd.startswith("getvid "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
@@ -2690,11 +2695,11 @@ def clientBot(op):
 									if mention["M"] not in lists:
 										lists.append(mention["M"])
 								for ls in lists:
-									contact = dots.getContact(ls)
+									contact = client.getContact(ls)
 									if contact.videoProfile == None:
-										return dots.sendMention(to, "@!\n➧ Tidak menggunakan video profile", [ls])
-									dots.sendMessage(to, "➧ Video Profil :")
-									dots.sendVideoWithURL(to, "http://dl.profile.line-cdn.net/{}/vp".format(contact.pictureStatus))
+										return client.sendMention(to, "@!\n➧ Tidak menggunakan video profile", [ls])
+									client.sendMessage(to, "➧ Video Profil :")
+									client.sendVideoWithURL(to, "http://dl.profile.line-cdn.net/{}/vp".format(contact.pictureStatus))
 						elif cmd.startswith("getcover "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
@@ -2705,50 +2710,50 @@ def clientBot(op):
 									if mention["M"] not in lists:
 										lists.append(mention["M"])
 								for ls in lists:
-									cover = dots.getProfileCoverURL(ls)
-									dots.sendMessage(to, "➧ Picture Cover :")
-									dots.sendImageWithURL(to, str(cover))
+									cover = client.getProfileCoverURL(ls)
+									client.sendMessage(to, "➧ Picture Cover :")
+									client.sendImageWithURL(to, str(cover))
 						
 						elif cmd == "gpic":
 							if msg.toType == 2:
-								group = dots.getGroup(to)
+								group = client.getGroup(to)
 								groupPicture = "http://dl.profile.line-cdn.net/{}".format(group.pictureStatus)
-								dots.sendMessage(to, "➧ Group Cover :")
-								dots.sendImageWithURL(to, groupPicture)
+								client.sendMessage(to, "➧ Group Cover :")
+								client.sendImageWithURL(to, groupPicture)
 						elif cmd == "gname":
 							if msg.toType == 2:
-								group = dots.getGroup(to)
-								dots.sendMessage(to, "➧ Nama Group : {}".format(group.name))
+								group = client.getGroup(to)
+								client.sendMessage(to, "➧ Nama Group : {}".format(group.name))
 						elif cmd == "gid":
 							if msg.toType == 2:
-								group = dots.getGroup(to)
-								dots.sendMessage(to, "➧ Group ID :\n   {}".format(group.id))
+								group = client.getGroup(to)
+								client.sendMessage(to, "➧ Group ID :\n   {}".format(group.id))
 						
 						elif cmd == "tag name":
 							if msg.toType == 2:
-								group = dots.getGroup(to)
+								group = client.getGroup(to)
 								num = 0
 								ret_ = "╭━━━━━━━━━━━━━━━━╮\n┃          TAG BY NAME\n┣•━━━━━━━━━━━━━━━━"
 								for contact in group.members:
 									num += 1
 									ret_ += "\n┣ {}. {}".format(num, contact.displayName)
 								ret_ += "\n┣•━━━━━━━━━━━━━━━━\n┃ Total Members : {} ".format(len(group.members)) + "\n╰━━━━━━━━━━━━━━━━╯"
-								dots.sendMessage(to, ret_)
+								client.sendMessage(to, ret_)
 						elif cmd == "pendinglist":
 							if msg.toType == 2:
-								group = dots.getGroup(to)
+								group = client.getGroup(to)
 								ret_ = "╭━━━━━━━━━━━━━━━━╮\n┃         PENDING LIST\n┣•━━━━━━━━━━━━━━━━"
 								no = 0
 								if group.invitee is None or group.invitee == []:
-									return dots.sendMessage(to, "➧ Tidak ada pendingan")
+									return client.sendMessage(to, "➧ Tidak ada pendingan")
 								else:
 									for pending in group.invitee:
 										no += 1
 										ret_ += "\n┣ {}. {}".format(str(no), str(pending.displayName))
 									ret_ += "\n┣•━━━━━━━━━━━━━━━━\n┃ Total Pending : {} ".format(str(len(group.invitee))) + "\n╰━━━━━━━━━━━━━━━━╯"
-									dots.sendMessage(to, str(ret_))
+									client.sendMessage(to, str(ret_))
 						elif cmd == "ginfo":
-							group = dots.getGroup(to)
+							group = client.getGroup(to)
 							try:
 								try:
 									groupCreator = group.creator.mid
@@ -2772,9 +2777,9 @@ def clientBot(op):
 								ret_ += "\n ➧ Group Qr : {}".format(groupQr)
 								ret_ += "\n ➧ Group Ticket : \n   {}".format(groupTicket)
 								ret_ += "\n╭━━━━━━━━━━━━━━━━╮\n┃         DOTS AUTO BOT \n╰━━━━━━━━━━━━━━━━╯"
-								dots.sendMention(to, str(ret_), [groupCreator])
-								dots.sendMessage(to, "➧ Group Cover Picture")
-								dots.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(group.pictureStatus))
+								client.sendMention(to, str(ret_), [groupCreator])
+								client.sendMessage(to, "➧ Group Cover Picture")
+								client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(group.pictureStatus))
 							except:
 								pass
 							
@@ -2795,8 +2800,8 @@ def clientBot(op):
 							result += "\n ➧ Private : {}".format(data["result"]["private"])
 							result += "\n ➧ Post : {}".format(data["result"]["mediacount"])
 							result += "\n╭━━━━━━━━━━━━━━━━╮\n┃         DOTS AUTO BOT \n╰━━━━━━━━━━━━━━━━╯"
-							dots.sendImageWithURL(to, data["result"]["url"])
-							dots.sendFooter(to, result, icon, name, link)
+							client.sendImageWithURL(to, data["result"]["url"])
+							client.sendFooter(to, result, icon, name, link)
 						elif cmd.startswith("instastory "):
 							sep = text.split(" ")
 							query = text.replace(sep[0] + " ","")
@@ -2809,9 +2814,9 @@ def clientBot(op):
 								if num <= len(data["url"]):
 									search = data["url"][num - 1]
 									if search["tipe"] == 1:
-										dots.sendImageWithURL(to, str(search["link"]))
+										client.sendImageWithURL(to, str(search["link"]))
 									elif search["tipe"] == 2:
-										dots.sendVideoWithURL(to, str(search["link"]))
+										client.sendVideoWithURL(to, str(search["link"]))
 						
 						elif cmd.startswith("yvideo "):
 							sep = text.split("|")
@@ -2827,8 +2832,8 @@ def clientBot(op):
 									no += 1
 									result += "\n ➧ {}. {}".format(str(no),str(anu["title"]))
 								result += "\n╭━━━━━━━━━━━━━━━━╮\n┃ Total Result : {} ".format(str(len(data["videos"]))) + "\n╰━━━━━━━━━━━━━━━━╯"
-								dots.sendMessage(to, result)
-								dots.sendMessage(to, "➧ Untuk melihat info video : \n➧ Silahkan ketik :  {} {}| (Nomor Video)".format(str(setKey), str(search)))
+								client.sendMessage(to, result)
+								client.sendMessage(to, "➧ Untuk melihat info video : \n➧ Silahkan ketik :  {} {}| (Nomor Video)".format(str(setKey), str(search)))
 							elif len(cond) == 2:
 								num = int(str(cond[1]))
 								if num <= len(data):
@@ -2844,14 +2849,14 @@ def clientBot(op):
 									ret_ += "\n ➧ Description : {}".format(str(search["description"]))
 									ret_ += "\n ➧ [ {} ]".format(str(search["webpage"]))
 									ret_ += "\n╭━━━━━━━━━━━━━━━━╮\n┃         DOTS AUTO BOT \n╰━━━━━━━━━━━━━━━━╯"
-									dots.sendImageWithURL(to, str(search["thumbnail"]))
-									dots.sendMessage(to, str(ret_))
+									client.sendImageWithURL(to, str(search["thumbnail"]))
+									client.sendMessage(to, str(ret_))
 						elif cmd.startswith("gambar "):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							url = requests.get("http://rahandiapi.herokuapp.com/imageapi?key=betakey&q={}".format(txt))
 							data = url.json()
-							dots.sendImageWithURL(to, random.choice(data["result"]))
+							client.sendImageWithURL(to, random.choice(data["result"]))
 						elif cmd.startswith("play "):
 							sep = text.split("|")
 							query = text.replace(sep[0] + " ","")
@@ -2867,7 +2872,7 @@ def clientBot(op):
 									ret_ += "\n ➧ {}. {}".format(str(num), str(music["single"]))
 								ret_ += "\n╭━━━━━━━━━━━━━━━━╮\n┃       Total Music : {} ".format(str(len(data["result"])) + " \n╰━━━━━━━━━━━━━━━━╯")
 								ret_ += "\n\n➧ Untuk memutar music : \n➧ Silahkan ketik :  {} {}| (Nomor Lagu)".format(str(setKey), str(search))
-								dots.sendMessage(to, str(ret_))
+								client.sendMessage(to, str(ret_))
 							elif len(cond) == 2:
 								num = int(cond[1])
 								if num <= len(data["result"]):
@@ -2879,11 +2884,11 @@ def clientBot(op):
 									ret_ += "\n ➧ Album : {}".format(str(data["result"]["album"]))
 									ret_ += "\n ➧ Size : {}".format(str(data["result"]["size"]))
 									ret_ += "\n╭━━━━━━━━━━━━━━━━╮\n┃       DOTS AUTO BOT \n╰━━━━━━━━━━━━━━━━╯"
-									dots.sendImageWithURL(to, str(data["result"]["img"]))
-									dots.sendMessage(to, str(ret_))
-									dots.sendMessage(to, "➧ Downloading Audio...")
-									dots.sendAudioWithURL(to, str(data["result"]["mp3"][0]))
-									dots.sendMessage(to, "➧ Selamat Mendengarkan")
+									client.sendImageWithURL(to, str(data["result"]["img"]))
+									client.sendMessage(to, str(ret_))
+									client.sendMessage(to, "➧ Downloading Audio...")
+									client.sendAudioWithURL(to, str(data["result"]["mp3"][0]))
+									client.sendMessage(to, "➧ Selamat Mendengarkan")
 								
 						elif cmd.startswith("tr-"):
 							sep = text.split("-")
@@ -2894,17 +2899,17 @@ def clientBot(op):
 							else:
 								txt = text.lower().replace(settings["keyCommand"] + "tr-" + lang + " ","")
 							if lang not in language["googletrans"]:
-								return dots.sendMessage(to, "➧ Bahasa {} tidak ditemukan".format(lang))
+								return client.sendMessage(to, "➧ Bahasa {} tidak ditemukan".format(lang))
 							translator = Translator()
 							result = translator.translate(txt, dest=lang)
-							dots.sendMessage(to, result.text)
+							client.sendMessage(to, result.text)
 						
 						elif text.lower() == "/info":
 							if settings["checkContact"] == True:
-								dots.sendMessage(to, "➧ Kirim Kontaknya")
+								client.sendMessage(to, "➧ Kirim Kontaknya")
 							else:
 								settings["checkContact"] = True
-								dots.sendMessage(to, "➧ Kirim Kontaknya")
+								client.sendMessage(to, "➧ Kirim Kontaknya")
 						
 					elif msg.contentType == 7:
 						if settings["checkSticker"] == True:
@@ -2917,37 +2922,37 @@ def clientBot(op):
 							ret_ += "\n  ➧ STK_VER : {}".format(stk_ver)
 							ret_ += "\n  ➧ STK_URL : \n   line://shop/detail/{}".format(pkg_id)
 							ret_ += "\n╭━━━━━━━━━━━━━━━━╮\n┃        DOTS AUTO BOT \n╰━━━━━━━━━━━━━━━━╯"
-							dots.sendMessage(to, str(ret_))
+							client.sendMessage(to, str(ret_))
 					elif msg.contentType == 13:
 						if settings["checkContact"] == True:
 							try:
-								contact = dots.getContact(msg.contentMetadata["mid"])
-								cover = dots.getProfileCoverURL(msg.contentMetadata["mid"])
+								contact = client.getContact(msg.contentMetadata["mid"])
+								cover = client.getProfileCoverURL(msg.contentMetadata["mid"])
 								ret_ = "╭━━━━━━━━━━━━━━━━╮\n┃       DETAIL CONTACT\n╰━━━━━━━━━━━━━━━━╯"
 								ret_ += "\n ➧ Nama : {}".format(str(contact.displayName))
 								ret_ += "\n ➧ Bio : \n   {}".format(str(contact.statusMessage))
 								ret_ += "╭━━━━━━━━━━━━━━━━╮\n┃         DOTS AUTO BOT \n╰━━━━━━━━━━━━━━━━╯"
-								dots.sendMessage(to, str(ret_))
-								dots.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(str(contact.pictureStatus)))
-								dots.sendImageWithURL(to, cover)
+								client.sendMessage(to, str(ret_))
+								client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(str(contact.pictureStatus)))
+								client.sendImageWithURL(to, cover)
 							except:
-								dots.sendMessage(to, "➧ Kontak tidak valid")
+								client.sendMessage(to, "➧ Kontak tidak valid")
 					elif msg.contentType == 13:
 						if settings["checkContact"] == True:
 							try:
 								dd.findAndAddContactsByMid(target)
-								contact = dots.getContact(target)
-								cover = dots.getProfileCoverURL(target)
+								contact = client.getContact(target)
+								cover = client.getProfileCoverURL(target)
 								ret_ = "╭━━━━━━━━━━━━━━━━╮\n┃      DETAIL CONTACT\n╰━━━━━━━━━━━━━━━━╯"
 								ret_ += "\n ➧ Nama : {}".format(str(contact.displayName))
 								ret_ += "\n ➧ MID : {}".format(str(msg.contentMetadata["mid"]))
 								ret_ += "\n ➧ Bio : \n   {}".format(str(contact.statusMessage))
 								ret_ += "\n╭━━━━━━━━━━━━━━━━╮\n┃         DOTS AUTO BOT \n╰━━━━━━━━━━━━━━━━╯"
-								random.sendMessage(to, str(ret_))
-								random.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(str(contact.pictureStatus)))
-								random.sendImageWithURL(to, cover)
+								client.sendMessage(to, str(ret_))
+								client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(str(contact.pictureStatus)))
+								client.sendImageWithURL(to, cover)
 							except:
-								random.sendMessage(to, "➧ Kontak tidak valid")
+								client.sendMessage(to, "➧ Kontak tidak valid")
 								
 					elif msg.contentType == 16:
 						if settings["checkPost"] == True:
@@ -2984,9 +2989,9 @@ def clientBot(op):
 									text = "\n ➧ Tulisan : {}".format(str(msg.contentMetadata["text"]))
 									ret_ += text
 								ret_ += "\n╭━━━━━━━━━━━━━━━━╮\n┃         DOTS AUTO BOT \n╰━━━━━━━━━━━━━━━━╯"
-								random.sendMessage(to, str(ret_))
+								client.sendMessage(to, str(ret_))
 							except:
-								random.sendMessage(to, "➧ Post tidak valid")
+								client.sendMessage(to, "➧ Post tidak valid")
 			except Exception as error:
 				logError(error)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~เทส~~~~~~~~~
@@ -3871,6 +3876,11 @@ def NOTIFIED_INVITE_INTO_GROUP(op):
 		ki3.acceptGroupInvitation(op.param1)
 		ki4.acceptGroupInvitation(op.param1)
 		ki5.acceptGroupInvitation(op.param1)
+		ki6.acceptGroupInvitation(op.param1)
+		ki7.acceptGroupInvitation(op.param1)
+		ki8.acceptGroupInvitation(op.param1)
+		ki9.acceptGroupInvitation(op.param1)
+		ki10.acceptGroupInvitation(op.param1)
 	except Exception as e:
 		client.log("[NOTIFIED_INVITE_INTO_GROUP] ERROR : " + str(e))
 def NOTIFIED_KICKOUT_FROM_GROUP(op):
