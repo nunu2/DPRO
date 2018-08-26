@@ -1587,31 +1587,27 @@ def clientBot(op):
 								ki4.acceptGroupInvitationByTicket(msg.to,Ticket)
 								ki5.acceptGroupInvitationByTicket(msg.to,Ticket)
 								dots.acceptGroupInvitationByTicket(msg.to,Ticket)
-								G = client.getGroup(msg.to)
+								G = random.getGroup(msg.to)
 								G.preventedJoinByTicket = True
-								ki1.updateGroup(G)
-								G.preventedJoinByTicket(G)
-								ki1.updateGroup(G)
-								ki.sendMessage(to, "➧ All Auto Bot Protect On\n➧ Siap melayani bos semuanya...")
+								random.updateGroup(G)
+								random.sendMessage(to, "➧ All Auto Bot Protect On\n➧ Siap melayani bos semuanya...")
 								
 						elif cmd in ["public in"]:
 							if msg._from in Bot:
-								G = ki1.getGroup(msg.to)
-								ginfo = ki1.getGroup(msg.to)
+								G = random.getGroup(msg.to)
+								ginfo = random.getGroup(msg.to)
 								G.preventedJoinByTicket = False
-								ki1.updateGroup(G)
+								random.updateGroup(G)
 								invsend = 0
-								Ticket = ki1.reissueGroupTicket(msg.to)
-								dots.acceptGroupInvitationByTicket(msg.to,Ticket)
-								G = ki1.getGroup(msg.to)
+								Ticket = random.reissueGroupTicket(msg.to)
+								ki11.acceptGroupInvitationByTicket(msg.to,Ticket)
+								G = random.getGroup(msg.to)
 								G.preventedJoinByTicket = True
-								ki1.updateGroup(G)
-								G.preventedJoinByTicket(G)
-								ki1.updateGroup(G)
-								dots.sendMessage(to, "➧ Public Bot On...\n➧ Ketik Menu Untuk Bantuan")
+								random.updateGroup(G)
+								random.sendMessage(to, "➧ Public Bot On...\n➧ Ketik Menu Untuk Bantuan")
 						if cmd in ["public out"]:
 							if msg._from in Bot:
-								dots.leaveGroup(msg.to)
+								ki11.leaveGroup(msg.to)
 								
 						elif cmd == "pro key":
 							if msg._from in Bot:
@@ -1620,7 +1616,7 @@ def clientBot(op):
 								icon = "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus)
 								name = contact.displayName
 								link = "https://timeline.line.me/post/_dZNo9tm3E3PH0dURm6N9Rf_pYxmFJO2uASn_y7Q/1153217318709030407"
-								ki1.sendFooter(to, helpPro, icon, name, link)
+								client.sendFooter(to, helpPro, icon, name, link)
 							
 						elif cmd == "lurking on":
 							if msg._from in Bot:
