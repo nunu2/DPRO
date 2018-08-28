@@ -1592,22 +1592,7 @@ def clientBot(op):
 								random.updateGroup(G)
 								random.sendMessage(to, "➧ All Auto Bot Protect On\n➧ Siap melayani bos semuanya...")
 								
-						elif cmd in ["public in"]:
-							if msg._from in Bot:
-								G = random.getGroup(msg.to)
-								ginfo = random.getGroup(msg.to)
-								G.preventedJoinByTicket = False
-								random.updateGroup(G)
-								invsend = 0
-								Ticket = random.reissueGroupTicket(msg.to)
-								ki11.acceptGroupInvitationByTicket(msg.to,Ticket)
-								G = random.getGroup(msg.to)
-								G.preventedJoinByTicket = True
-								random.updateGroup(G)
-								random.sendMessage(to, "➧ Public Bot On...\n➧ Ketik Menu Untuk Bantuan")
-						if cmd in ["public out"]:
-							if msg._from in Bot:
-								ki11.leaveGroup(msg.to)
+
 								
 						elif cmd == "pro key":
 							if msg._from in Bot:
@@ -2069,86 +2054,8 @@ def clientBot(op):
 						
 #ADMIN PRO START
 								
-						elif cmd == "pro key":
-							if msg._from in admin:
-								helpPro = menuPro()
-								contact = client.getContact(sender)
-								icon = "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus)
-								name = contact.displayName
-								link = "https://timeline.line.me/post/_dZNo9tm3E3PH0dURm6N9Rf_pYxmFJO2uASn_y7Q/1153217318709030407"
-								ki1.sendFooter(to, helpPro, icon, name, link)
-							
-						elif cmd == "lurking on":
-							if msg._from in admin:
-								tz = pytz.timezone("Asia/Jakarta")
-								timeNow = datetime.now(tz=tz)
-								timeNow = datetime.now(tz=tz)
-								day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
-								hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"]
-								bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
-								hr = timeNow.strftime("%A")
-								bln = timeNow.strftime("%m")
-								for i in range(len(day)):
-									if hr == day[i]: hasil = hari[i]
-								for k in range(0, len(bulan)):
-									if bln == str(k): bln = bulan[k-1]
-								readTime = "➧ " + hasil + ", " + timeNow.strftime('%d') + " - " + bln + " - " + timeNow.strftime('%Y') + "\n➧ Jam : [ " + timeNow.strftime('%H:%M:%S') + " ]"
-								if to in read['readPoint']:
-									try:
-										del read['readPoint'][to]
-										del read['readMember'][to]
-									except:
-										pass
-									read['readPoint'][to] = msg_id
-									read['readMember'][to] = []
-									random.choice(GUE).sendMessage(to, "➧ Cctv Aktif")
-								else:
-									try:
-										del read['readPoint'][to]
-										del read['readMember'][to]
-									except:
-										pass
-									read['readPoint'][to] = msg_id
-									read['readMember'][to] = []
-									random.choice(GUE).sendMessage(to, "➧ Set reading point : \n{}".format(readTime))
-						elif cmd == "lurking off":
-							if msg._from in admin:
-								tz = pytz.timezone("Asia/Jakarta")
-								timeNow = datetime.now(tz=tz)
-								day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
-								hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"]
-								bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
-								bln = timeNow.strftime("%m")
-								hr = timeNow.strftime("%A")
-								for i in range(len(day)):
-									if hr == day[i]: hasil = hari[i]
-								for k in range(0, len(bulan)):
-									if bln == str(k): bln = bulan[k-1]
-								readTime = "➧ " + hasil + ", " + timeNow.strftime('%d') + " - " + bln + " - " + timeNow.strftime('%Y') + "\n➧ Jam : [ " + timeNow.strftime('%H:%M:%S') + " ]"
-							if to not in read['readPoint']:
-								random.choice(GUE).sendMessage(to,"➧ Cctv Nonaktif")
-							else:
-								try:
-									del read['readPoint'][to]
-									del read['readMember'][to]
-								except:
-									pass
-								random.choice(GUE).sendMessage(to, "➧ Delete reading point : \n{}".format(readTime))
-						if cmd == "reader":
-							if msg._from in admin:
-								if read["readMember"][to] == []:
-									return random.choice(GUE).sendMessage(to, "➧ Tidak Ada Sider")
-								else:
-									no = 0
-									result = "╭━━━━━━━━━━━━━━━━╮\n┃            LIST SIDER\n╰═══════╬╬═══════╯\n╭═══════╬╬═══════╮"
-									for dataRead in read["readMember"][to]:
-										no += 1
-										result += "\n┣ {}. @!".format(str(no))
-									result += "\n┣•━━━━━━━━━━━━━━━━\n┃ Total Sider : {} ".format(str(len(read["readMember"][to]))) + "\n╰━━━━━━━━━━━━━━━━╯"
-									random.choice(GUE).sendMention(to, result, read["readMember"][to])
-									read['readMember'][to] = []
-				
 						
+								
 				
 						
 						
@@ -2313,13 +2220,7 @@ def clientBot(op):
 								settings["checkSticker"] = False
 								client.sendMessage(to, "➧ Check details sticker nonaktif")
 						
-						elif cmd == "คท":
-							dots.sendMention(to, "@!", [sender])
-							dots.sendContact(to, sender)
-							contact = client.getContact(sender)
-							cover = client.getProfileCoverURL(sender)
-							client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
-							client.sendImageWithURL(to, cover)
+
 						elif cmd == "myprofile":
 							contact = client.getContact(sender)
 							cover = client.getProfileCoverURL(sender)
@@ -2332,28 +2233,7 @@ def clientBot(op):
 							client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
 							client.sendMessage(to, "➧ Cover Picture")
 							client.sendImageWithURL(to, cover)
-						elif cmd == "mymid":
-							contact = client.getContact(sender)
-							client.sendMention(to, "@!\n➧ Your Mid :\n   {}".format(contact.mid), [sender])
-						elif cmd == "myname":
-							contact = client.getContact(sender)
-							client.sendMention(to, "@!\n➧ Your display name :\n   {}".format(contact.displayName), [sender])
-						elif cmd == "mybio":
-							contact = client.getContact(sender)
-							client.sendMention(to, "➧ @!\n➧ Your Status Message :\n   {}".format(contact.statusMessage), [sender])
-						elif cmd == "mypic":
-							contact = client.getContact(sender)
-							client.sendMessage(to, "➧ Your Picture Covet :")
-							client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
-						elif cmd == "myvid":
-							contact = client.getContact(sender)
-							if contact.videoProfile == None:
-								return client.sendMessage(to, "➧ Anda tidak menggunakan video profile")
-							client.sendVideoWithURL(to, "http://dl.profile.line-cdn.net/{}/vp".format(contact.pictureStatus))
-						elif cmd == "mycover":
-							cover =client .getProfileCoverURL(sender)
-							client.sendMessage(to, "➧ Your Cover Picture :")
-							client.sendImageWithURL(to, str(cover))
+						
 						elif cmd.startswith("getmid "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
