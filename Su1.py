@@ -2021,10 +2021,6 @@ def clientBot(op):
 							sys.exit("[ INFO ] BOT SHUTDOWN")
 							return
 #OWNER PRO START
-						elif cmd == 'clean up':
-							if msg._from in Owner:
-								if msg.toType == 2:
-
 						elif cmd == 'adminlist':
 							if msg._from in Owner:
 								if admin == []:
