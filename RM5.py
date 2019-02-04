@@ -21,28 +21,29 @@ ki4 = LINE("lovepidchaya5@gmail.com","love451446")
 print ("===============[PRO 4 LOGIN SUKSES]===============\n")
 ki5 = LINE("lovepidchaya6@gmail.com","love451446")
 print ("===============[PRO 5 LOGIN SUKSES]===============\n")
-dots = LINE("lovepidchaya7@gmail.com","love451446")
+ki6 = LINE("lovepidchaya7@gmail.com","love451446")
 print ("==============[PUBLIC BOT LOGIN SUKSES]==============\n")
-dd1 = LINE("lovepidchaya8@gmail.com","love451446")
+ki7 = LINE("lovepidchaya8@gmail.com","love451446")
 print ("===============[LEADER 1 LOGIN SUKSES]===============\n")
-dd2 = LINE("lovepidchaya9@gmail.com","love451446")
+ki8 = LINE("lovepidchaya9@gmail.com","love451446")
 print ("===============[LEADER 2 LOGIN SUKSES]===============\n")
-dd3 = LINE("lovepidchaya10@gmail.com","love451446")
+ki9 = LINE("lovepidchaya10@gmail.com","love451446")
 print ("===============[LEADER 3 LOGIN SUKSES]===============\n\n======================================\n        AUTO PROTECT BOT LINE\n            CREATOR : DEDE\n           DEDE SHOP CENTRE\n======================================\n\n[DOTS AUTO PROTECT BOT START]")
 
 
 KAC = [client]
-GUE = [ki1,ki2,ki3,ki4,ki5]
+GUE = [ki1,ki2,ki3,ki4,ki5,ki6,ki7,ki8,ki9,ki10]
 clientMID = client.profile.mid
-dotsMID = dots.profile.mid
 ki1MID = ki1.profile.mid
 ki2MID = ki2.profile.mid
 ki3MID = ki3.profile.mid
 ki4MID = ki4.profile.mid
 ki5MID = ki5.profile.mid
-AMID = dd1.profile.mid
-BMID = dd2.profile.mid
-CMID = dd3.profile.mid
+ki6MID = ki6.profile.mid
+ki7MID = ki7.profile.mid
+ki8MID = ki8.profile.mid
+ki9MID = ki9.profile.mid
+ki10MID = ki10.profile.mid
 
 Bot =[clientMID]
 Bots = [clientMID]
@@ -52,35 +53,52 @@ admin = ["u33699ed350f7715fce593dd4e8a5d475","uac3be5e86d7812e8cc28a6a312f52777"
 target = []
 
 clientProfile = client.getProfile()
-dotsProfile = dots.getProfile()
 ki1Profile = ki1.getProfile()
 ki2Profile = ki2.getProfile()
 ki3Profile = ki3.getProfile()
 ki4Profile = ki4.getProfile()
 ki5Profile = ki5.getProfile()
+ki6Profile = ki6.getProfile()
+ki7Profile = ki7.getProfile()
+ki8Profile = ki6.getProfile()
+ki9Profile = ki7.getProfile()
+ki10Profile = ki7.getProfile()
 
 clientSettings = client.getSettings()
-dotsSettings = dots.getSettings()
 ki1Settings = ki1.getSettings()
 ki2Settings = ki2.getSettings()
 ki3Settings = ki3.getSettings()
 ki4Settings = ki4.getSettings()
 ki5Settings = ki5.getSettings()
+ki6Settings = ki6.getSettings()
+ki7Settings = ki7.getSettings()
+ki8Settings = ki8.getSettings()
+ki9Settings = ki9.getSettings()
+ki10Settings = ki10.getSettings()
+
 
 oepoll = OEPoll(client)
-oepollx = OEPoll(dots)
 oepoll1 = OEPoll(ki1)
 oepoll2 = OEPoll(ki2)
 oepoll3 = OEPoll(ki3)
 oepoll4 = OEPoll(ki4)
 oepoll5 = OEPoll(ki5)
-
+oepoll6 = OEPoll(ki6)
+oepoll7 = OEPoll(ki7)
+oepoll8 = OEPoll(ki8)
+oepoll9 = OEPoll(ki9)
+oepoll10 = OEPoll(ki10)
 
 responsename1 = ki1.getProfile().displayName
 responsename2 = ki2.getProfile().displayName
 responsename3 = ki3.getProfile().displayName
 responsename4 = ki4.getProfile().displayName
 responsename5 = ki5.getProfile().displayName
+responsename6 = ki6.getProfile().displayName
+responsename7 = ki7.getProfile().displayName
+responsename8 = ki8.getProfile().displayName
+responsename9 = ki9.getProfile().displayName
+responsename10 = ki10.getProfile().displayName
 
 languageOpen = codecs.open("language.json","r","utf-8")
 readOpen = codecs.open("read.json","r","utf-8")
