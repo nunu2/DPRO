@@ -2935,9 +2935,9 @@ def clientBot(op):
 									text = "\n ➧ Tulisan : {}".format(str(msg.contentMetadata["text"]))
 									ret_ += text
 								ret_ += "\n╭━━━━━━━━━━━━━━━━╮\n┃         DOTS AUTO BOT \n╰━━━━━━━━━━━━━━━━╯"
-								dots.sendMessage(to, str(ret_))
+								ki1.sendMessage(to, str(ret_))
 							except:
-								dots.sendMessage(to, "➧ Post tidak valid")
+								ki1.sendMessage(to, "➧ Post tidak valid")
 			except Exception as error:
 				logError(error)
 #AUTO PROTECTION START
@@ -3321,6 +3321,11 @@ def NOTIFIED_INVITE_INTO_GROUP(op):
 		ki3.acceptGroupInvitation(op.param1)
 		ki4.acceptGroupInvitation(op.param1)
 		ki5.acceptGroupInvitation(op.param1)
+		ki6.acceptGroupInvitation(op.param1)
+		ki7.acceptGroupInvitation(op.param1)
+		ki8.acceptGroupInvitation(op.param1)
+		ki9.acceptGroupInvitation(op.param1)
+		ki10.acceptGroupInvitation(op.param1)
 	except Exception as e:
 		client.log("[NOTIFIED_INVITE_INTO_GROUP] ERROR : " + str(e))
 def NOTIFIED_KICKOUT_FROM_GROUP(op):
