@@ -1798,32 +1798,8 @@ def clientBot(op):
 										ret_ += "\n┣ {}. {}".format(num, contact.displayName)
 									ret_ += "\n┣•━━━━━━━━━━━━━━━━\n┃ Total Members : {} ".format(len(group.members)) + "\n╰━━━━━━━━━━━━━━━━╯"
 									random.choice(GUE).sendMessage(to, ret_)
-						elif cmd == 'all pro on':
-							if msg._from in Bot:
-								settings["protect"] = True
-								settings["qrprotect"] = True
-								settings["inviteprotect"] = True
-								settings["cancelprotect"] = True
-								settings["join link"] = True
-								random.choice(GUE).sendMessage(msg.to,"➧ Join link Protect on")
-								random.choice(GUE).sendMessage(msg.to,"➧ Qr Protect On")
-								random.choice(GUE).sendMessage(msg.to,"➧ Protect On")
-								random.choice(GUE).sendMessage(msg.to,"➧ Invite Protect On")
-								random.choice(GUE).sendMessage(msg.to,"➧ Cancel Protect On")
-								random.choice(GUE).sendMessage(msg.to,"➧ All Protect On")
-						elif cmd == 'all pro Off':
-							if msg._from in Bot:
-								settings["protect"] = False
-								settings["qrprotect"] = False
-								settings["inviteprotect"] = False
-								settings["cancelprotect"] = False
-								settings["join link"] = False
-								random.choice(GUE).sendMessage(msg.to,"➧ Join link Protect Off")
-								random.choice(GUE).sendMessage(msg.to,"➧ Qr Protect Off")
-								random.choice(GUE).sendMessage(msg.to,"➧ Protect Off")
-								random.choice(GUE).sendMessage(msg.to,"➧ Invite Protect Off")
-								random.choice(GUE).sendMessage(msg.to,"➧ Cancel Protect Off")
-								random.choice(GUE).sendMessage(msg.to,"➧ All Protect Off")
+
+						
 						elif cmd == 'proqr off':
 							if msg._from in Bot:
 								if msg.toType == 2:
