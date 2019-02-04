@@ -311,12 +311,12 @@ def menuSelf():
                 "╰═══════╬╬═══════╯" + "\n" + \
                 "╭═══════╬╬═══════╮" + "\n" + \
                 "┣│✪│•" + key + "Turn off" + "\n" + \
-		        "┣│✪│•" + key + "Restart" + "\n" + \
-		        "┣│✪│•" + key + "Runtime" + "\n" + \
-		        "┣│✪│•" + key + "Speed" + "\n" + \
-		        "┣│✪│•" + key + "Status" + "\n" + \
-		        "┣│✪│•" + key + "Cpp" + "\n" + \
-		        "┣│✪│•" + key + "CName:_Text" + "\n" + \
+		"┣│✪│•" + key + "Restart" + "\n" + \
+		"┣│✪│•" + key + "Runtime" + "\n" + \
+		"┣│✪│•" + key + "Speed" + "\n" + \
+		"┣│✪│•" + key + "Status" + "\n" + \
+		"┣│✪│•" + key + "Cpp" + "\n" + \
+		"┣│✪│•" + key + "CName:_Text" + "\n" + \
                 "┣│✪│•" + key + "CBio:_Text" + "\n" + \
                 "┣│✪│•" + key + "Me" + "\n" + \
                 "┣│✪│•" + key + "MyMid" + "\n" + \
@@ -425,8 +425,8 @@ def menuMedia():
                 "┣│✪│•" + key + "Play_Text" + "\n" + \
                 "┣│✪│•" + key + "Lyric_Text" + "\n" + \
                 "┣│✪│•" + key + "Yvideo_Text" + "\n" + \
-	            "╰═══════╬╬═══════╯" + "\n" + \
-	            "╭═══════╬╬═══════╮" + "\n" + \
+	        "╰═══════╬╬═══════╯" + "\n" + \
+	        "╭═══════╬╬═══════╮" + "\n" + \
                 "┃    DEDE SHOP CENTRE™" + "\n" + \
                 "╰━━━━━━━━━━━━━━━━╯"
 	return menuMedia
