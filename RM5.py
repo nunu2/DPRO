@@ -244,8 +244,8 @@ def menuPro():
                 "╭═══════╬╬═══════╮" + "\n" + \
                 "┃             OWNER KEY" + "\n" + \
                 "┣•━━━━━━━━━━━━━━━━" + "\n" + \
-                "┣➧•" + key + "Pro in" + "\n" + \
-                "┣➧•" + key + "Pro out" + "\n" + \
+                "┣➧•" + key + "NO" + "\n" + \
+                "┣➧•" + key + "OFF" + "\n" + \
                 "┣➧•" + key + "Public in" + "\n" + \
                 "┣➧•" + key + "Public out" + "\n" + \
                 "┣➧•" + key + "Ownerlist" + "\n" + \
@@ -1563,15 +1563,19 @@ def clientBot(op):
 								random.choice(GUE).sendMessage(to, "➧ Restarting Dots System\n➧ Tunggu 30 Detik")
 								restartBot()
 
-						if cmd in ["pro out"]:
+						if cmd in ["OFF"]:
 							if msg._from in Bot:
 								ki1.leaveGroup(msg.to)
 								ki2.leaveGroup(msg.to)
 								ki3.leaveGroup(msg.to)
 								ki4.leaveGroup(msg.to)
 								ki5.leaveGroup(msg.to)
+								dd1.leaveGroup(msg.to)
+								dd2.leaveGroup(msg.to)
+								dd3.leaveGroup(msg.to)
+								dots.leaveGroup(msg.to)
 								
-						elif cmd in ["pro in"]:
+						elif cmd in ["ON"]:
 							if msg._from in Bot:
 								G = client.getGroup(msg.to)
 								ginfo = client.getGroup(msg.to)
@@ -1585,31 +1589,15 @@ def clientBot(op):
 								ki4.acceptGroupInvitationByTicket(msg.to,Ticket)
 								ki5.acceptGroupInvitationByTicket(msg.to,Ticket)
 								dots.acceptGroupInvitationByTicket(msg.to,Ticket)
+								dd1.acceptGroupInvitationByTicket(msg.to,Ticket)
+								dd2.acceptGroupInvitationByTicket(msg.to,Ticket)
+								dd3.acceptGroupInvitationByTicket(msg.to,Ticket)
 								G = client.getGroup(msg.to)
 								G.preventedJoinByTicket = True
 								ki1.updateGroup(G)
 								G.preventedJoinByTicket(G)
 								ki1.updateGroup(G)
 								ki.sendMessage(to, "➧ All Auto Bot Protect On\n➧ Siap melayani bos semuanya...")
-								
-						elif cmd in ["public in"]:
-							if msg._from in Bot:
-								G = ki1.getGroup(msg.to)
-								ginfo = ki1.getGroup(msg.to)
-								G.preventedJoinByTicket = False
-								ki1.updateGroup(G)
-								invsend = 0
-								Ticket = ki1.reissueGroupTicket(msg.to)
-								dots.acceptGroupInvitationByTicket(msg.to,Ticket)
-								G = ki1.getGroup(msg.to)
-								G.preventedJoinByTicket = True
-								ki1.updateGroup(G)
-								G.preventedJoinByTicket(G)
-								ki1.updateGroup(G)
-								dots.sendMessage(to, "➧ Public Bot On...\n➧ Ketik Menu Untuk Bantuan")
-						if cmd in ["public out"]:
-							if msg._from in Bot:
-								dots.leaveGroup(msg.to)
 								
 						elif cmd == "pro key":
 							if msg._from in Bot:
@@ -2068,41 +2056,12 @@ def clientBot(op):
 								random.choice(GUE).sendMessage(to, "➧ Restarting Dots System\n➧ Tunggu 30 Detik")
 								restartBot()
 
-						if cmd in ["pro out"]:
-							if msg._from in Owner:
-								ki1.leaveGroup(msg.to)
-								ki2.leaveGroup(msg.to)
-								ki3.leaveGroup(msg.to)
-								ki4.leaveGroup(msg.to)
-								ki5.leaveGroup(msg.to)
-								
-						elif cmd in ["pro in"]:
-							if msg._from in Owner:
-								G = client.getGroup(msg.to)
-								ginfo = client.getGroup(msg.to)
-								G.preventedJoinByTicket = False
-								client.updateGroup(G)
-								invsend = 0
-								Ticket = client.reissueGroupTicket(msg.to)
-								ki1.acceptGroupInvitationByTicket(msg.to,Ticket)
-								ki2.acceptGroupInvitationByTicket(msg.to,Ticket)
-								ki3.acceptGroupInvitationByTicket(msg.to,Ticket)
-								ki4.acceptGroupInvitationByTicket(msg.to,Ticket)
-								ki5.acceptGroupInvitationByTicket(msg.to,Ticket)
-								dots.acceptGroupInvitationByTicket(msg.to,Ticket)
-								G = client.getGroup(msg.to)
-								G.preventedJoinByTicket = True
-								ki1.updateGroup(G)
-								G.preventedJoinByTicket(G)
-								ki1.updateGroup(G)
-								ki.sendMessage(to, "➧ All Auto Bot Protect On\n➧ Siap melayani bos semuanya...")
-								
 						elif cmd in ["public in"]:
 							if msg._from in Owner:
-								G = ki1.getGroup(msg.to)
-								ginfo = ki1.getGroup(msg.to)
+								G = dots.getGroup(msg.to)
+								ginfo = dots.getGroup(msg.to)
 								G.preventedJoinByTicket = False
-								ki1.updateGroup(G)
+								dots.updateGroup(G)
 								invsend = 0
 								Ticket = ki1.reissueGroupTicket(msg.to)
 								dots.acceptGroupInvitationByTicket(msg.to,Ticket)
@@ -2110,7 +2069,7 @@ def clientBot(op):
 								G.preventedJoinByTicket = True
 								ki1.updateGroup(G)
 								G.preventedJoinByTicket(G)
-								ki1.updateGroup(G)
+								dots.updateGroup(G)
 								dots.sendMessage(to, "➧ Public Bot On...\n➧ Ketik Menu Untuk Bantuan")
 						if cmd in ["public out"]:
 							if msg._from in Owner:
