@@ -2567,27 +2567,27 @@ def clientBot(op):
 							dots.sendMessage(to, "➧ Cover Picture")
 							dots.sendImageWithURL(to, cover)
 						elif cmd == "mymid":
-							contact = dots.getContact(sender)
-							dots.sendMention(to, "@!\n➧ Your Mid :\n   {}".format(contact.mid), [sender])
+							contact = client.getContact(sender)
+							client.sendMention(to, "@!\n➧ Your Mid :\n   {}".format(contact.mid), [sender])
 						elif cmd == "myname":
-							contact = dots.getContact(sender)
-							dots.sendMention(to, "@!\n➧ Your display name :\n   {}".format(contact.displayName), [sender])
+							contact = client.getContact(sender)
+							client.sendMention(to, "@!\n➧ Your display name :\n   {}".format(contact.displayName), [sender])
 						elif cmd == "mybio":
-							contact = dots.getContact(sender)
-							dots.sendMention(to, "➧ @!\n➧ Your Status Message :\n   {}".format(contact.statusMessage), [sender])
+							contact = client.getContact(sender)
+							client.sendMention(to, "➧ @!\n➧ Your Status Message :\n   {}".format(contact.statusMessage), [sender])
 						elif cmd == "mypic":
 							contact = dots.getContact(sender)
 							dots.sendMessage(to, "➧ Your Picture Covet :")
 							dots.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
 						elif cmd == "myvid":
-							contact = dots.getContact(sender)
+							contact = client.getContact(sender)
 							if contact.videoProfile == None:
-								return dots.sendMessage(to, "➧ Anda tidak menggunakan video profile")
-							dots.sendVideoWithURL(to, "http://dl.profile.line-cdn.net/{}/vp".format(contact.pictureStatus))
+								return client.sendMessage(to, "➧ Anda tidak menggunakan video profile")
+							client.sendVideoWithURL(to, "http://dl.profile.line-cdn.net/{}/vp".format(contact.pictureStatus))
 						elif cmd == "mycover":
-							cover = dots.getProfileCoverURL(sender)
-							dots.sendMessage(to, "➧ Your Cover Picture :")
-							dots.sendImageWithURL(to, str(cover))
+							cover = client.getProfileCoverURL(sender)
+							client.sendMessage(to, "➧ Your Cover Picture :")
+							client.sendImageWithURL(to, str(cover))
 						elif cmd.startswith("getmid "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
@@ -2598,7 +2598,7 @@ def clientBot(op):
 									if mention["M"] not in lists:
 										lists.append(mention["M"])
 								for ls in lists:
-									dots.sendMention(to, "@! \n➧ Mid :\n   {}".format(ls), [ls])
+									client.sendMention(to, "@! \n➧ Mid :\n   {}".format(ls), [ls])
 						elif cmd.startswith("getname "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
@@ -2609,8 +2609,8 @@ def clientBot(op):
 									if mention["M"] not in lists:
 										lists.append(mention["M"])
 								for ls in lists:
-									contact = dots.getContact(ls)
-									dots.sendMention(to, "@! \n➧ Display Name :\n   {}".format(contact.displayName), [ls])
+									contact = client.getContact(ls)
+									client.sendMention(to, "@! \n➧ Display Name :\n   {}".format(contact.displayName), [ls])
 						elif cmd.startswith("getbio "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
@@ -2621,8 +2621,8 @@ def clientBot(op):
 									if mention["M"] not in lists:
 										lists.append(mention["M"])
 								for ls in lists:
-									contact = dots.getContact(ls)
-									dots.sendMention(to, "@! \n➧ Status Message :\n   {}".format(contact.statusMessage), [ls])
+									contact = client.getContact(ls)
+									client.sendMention(to, "@! \n➧ Status Message :\n   {}".format(contact.statusMessage), [ls])
 						elif cmd.startswith("getpic "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
@@ -2633,9 +2633,9 @@ def clientBot(op):
 									if mention["M"] not in lists:
 										lists.append(mention["M"])
 								for ls in lists:
-									contact = dots.getContact(ls)
-									dots.sendMessage(to, "➧ Picture Profile :")
-									dots.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
+									contact = client.getContact(ls)
+									client.sendMessage(to, "➧ Picture Profile :")
+									client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
 						elif cmd.startswith("getvid "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
@@ -2646,11 +2646,11 @@ def clientBot(op):
 									if mention["M"] not in lists:
 										lists.append(mention["M"])
 								for ls in lists:
-									contact = dots.getContact(ls)
+									contact = client.getContact(ls)
 									if contact.videoProfile == None:
-										return dots.sendMention(to, "@!\n➧ Tidak menggunakan video profile", [ls])
-									dots.sendMessage(to, "➧ Video Profil :")
-									dots.sendVideoWithURL(to, "http://dl.profile.line-cdn.net/{}/vp".format(contact.pictureStatus))
+										return client.sendMention(to, "@!\n➧ Tidak menggunakan video profile", [ls])
+									client.sendMessage(to, "➧ Video Profil :")
+									client.sendVideoWithURL(to, "http://dl.profile.line-cdn.net/{}/vp".format(contact.pictureStatus))
 						elif cmd.startswith("getcover "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
@@ -2661,9 +2661,9 @@ def clientBot(op):
 									if mention["M"] not in lists:
 										lists.append(mention["M"])
 								for ls in lists:
-									cover = dots.getProfileCoverURL(ls)
-									dots.sendMessage(to, "➧ Picture Cover :")
-									dots.sendImageWithURL(to, str(cover))
+									cover = client.getProfileCoverURL(ls)
+									client.sendMessage(to, "➧ Picture Cover :")
+									client.sendImageWithURL(to, str(cover))
 						
 						elif cmd == "gpic":
 							if msg.toType == 2:
