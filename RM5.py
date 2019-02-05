@@ -2703,6 +2703,8 @@ def clientBot(op):
 										ret_ += "\n┣ {}. {}".format(str(no), str(pending.displayName))
 									ret_ += "\n┣•━━━━━━━━━━━━━━━━\n┃ Total Pending : {} ".format(str(len(group.invitee))) + "\n╰━━━━━━━━━━━━━━━━╯"
 									dots.sendMessage(to, str(ret_))
+									
+									
 						elif cmd == "ginfo":
 							group = dots.getGroup(to)
 							try:
@@ -2751,8 +2753,8 @@ def clientBot(op):
 							result += "\n ➧ Private : {}".format(data["result"]["private"])
 							result += "\n ➧ Post : {}".format(data["result"]["mediacount"])
 							result += "\n╭━━━━━━━━━━━━━━━━╮\n┃         DOTS AUTO BOT \n╰━━━━━━━━━━━━━━━━╯"
-							dots.sendImageWithURL(to, data["result"]["url"])
-							dots.sendFooter(to, result, icon, name, link)
+							client.sendImageWithURL(to, data["result"]["url"])
+							client.sendFooter(to, result, icon, name, link)
 						elif cmd.startswith("instastory "):
 							sep = text.split(" ")
 							query = text.replace(sep[0] + " ","")
@@ -2765,9 +2767,9 @@ def clientBot(op):
 								if num <= len(data["url"]):
 									search = data["url"][num - 1]
 									if search["tipe"] == 1:
-										dots.sendImageWithURL(to, str(search["link"]))
+										client.sendImageWithURL(to, str(search["link"]))
 									elif search["tipe"] == 2:
-										dots.sendVideoWithURL(to, str(search["link"]))
+										client.sendVideoWithURL(to, str(search["link"]))
 						
 						elif cmd.startswith("yvideo "):
 							sep = text.split("|")
@@ -2783,8 +2785,8 @@ def clientBot(op):
 									no += 1
 									result += "\n ➧ {}. {}".format(str(no),str(anu["title"]))
 								result += "\n╭━━━━━━━━━━━━━━━━╮\n┃ Total Result : {} ".format(str(len(data["videos"]))) + "\n╰━━━━━━━━━━━━━━━━╯"
-								dots.sendMessage(to, result)
-								dots.sendMessage(to, "➧ Untuk melihat info video : \n➧ Silahkan ketik :  {} {}| (Nomor Video)".format(str(setKey), str(search)))
+								client.sendMessage(to, result)
+								client.sendMessage(to, "➧ Untuk melihat info video : \n➧ Silahkan ketik :  {} {}| (Nomor Video)".format(str(setKey), str(search)))
 							elif len(cond) == 2:
 								num = int(str(cond[1]))
 								if num <= len(data):
@@ -2800,14 +2802,14 @@ def clientBot(op):
 									ret_ += "\n ➧ Description : {}".format(str(search["description"]))
 									ret_ += "\n ➧ [ {} ]".format(str(search["webpage"]))
 									ret_ += "\n╭━━━━━━━━━━━━━━━━╮\n┃         DOTS AUTO BOT \n╰━━━━━━━━━━━━━━━━╯"
-									dots.sendImageWithURL(to, str(search["thumbnail"]))
-									dots.sendMessage(to, str(ret_))
+									client.sendImageWithURL(to, str(search["thumbnail"]))
+									client.sendMessage(to, str(ret_))
 						elif cmd.startswith("gambar "):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							url = requests.get("http://rahandiapi.herokuapp.com/imageapi?key=betakey&q={}".format(txt))
 							data = url.json()
-							dots.sendImageWithURL(to, random.choice(data["result"]))
+							client.sendImageWithURL(to, random.choice(data["result"]))
 						elif cmd.startswith("play "):
 							sep = text.split("|")
 							query = text.replace(sep[0] + " ","")
@@ -2823,7 +2825,7 @@ def clientBot(op):
 									ret_ += "\n ➧ {}. {}".format(str(num), str(music["single"]))
 								ret_ += "\n╭━━━━━━━━━━━━━━━━╮\n┃       Total Music : {} ".format(str(len(data["result"])) + " \n╰━━━━━━━━━━━━━━━━╯")
 								ret_ += "\n\n➧ Untuk memutar music : \n➧ Silahkan ketik :  {} {}| (Nomor Lagu)".format(str(setKey), str(search))
-								dots.sendMessage(to, str(ret_))
+								client.sendMessage(to, str(ret_))
 							elif len(cond) == 2:
 								num = int(cond[1])
 								if num <= len(data["result"]):
@@ -2835,11 +2837,11 @@ def clientBot(op):
 									ret_ += "\n ➧ Album : {}".format(str(data["result"]["album"]))
 									ret_ += "\n ➧ Size : {}".format(str(data["result"]["size"]))
 									ret_ += "\n╭━━━━━━━━━━━━━━━━╮\n┃       DOTS AUTO BOT \n╰━━━━━━━━━━━━━━━━╯"
-									dots.sendImageWithURL(to, str(data["result"]["img"]))
-									dots.sendMessage(to, str(ret_))
-									dots.sendMessage(to, "➧ Downloading Audio...")
-									dots.sendAudioWithURL(to, str(data["result"]["mp3"][0]))
-									dots.sendMessage(to, "➧ Selamat Mendengarkan")
+									client.sendImageWithURL(to, str(data["result"]["img"]))
+									client.sendMessage(to, str(ret_))
+									client.sendMessage(to, "➧ Downloading Audio...")
+									client.sendAudioWithURL(to, str(data["result"]["mp3"][0]))
+									client.sendMessage(to, "➧ Selamat Mendengarkan")
 								
 						elif cmd.startswith("tr-"):
 							sep = text.split("-")
@@ -2850,17 +2852,17 @@ def clientBot(op):
 							else:
 								txt = text.lower().replace(settings["keyCommand"] + "tr-" + lang + " ","")
 							if lang not in language["googletrans"]:
-								return dots.sendMessage(to, "➧ Bahasa {} tidak ditemukan".format(lang))
+								return client.sendMessage(to, "➧ Bahasa {} tidak ditemukan".format(lang))
 							translator = Translator()
 							result = translator.translate(txt, dest=lang)
-							dots.sendMessage(to, result.text)
+							client.sendMessage(to, result.text)
 						
 						elif text.lower() == "/info":
 							if settings["checkContact"] == True:
-								dots.sendMessage(to, "➧ Kirim Kontaknya")
+								client.sendMessage(to, "➧ Kirim Kontaknya")
 							else:
 								settings["checkContact"] = True
-								dots.sendMessage(to, "➧ Kirim Kontaknya")
+								client.sendMessage(to, "➧ Kirim Kontaknya")
 						
 					elif msg.contentType == 7:
 						if settings["checkSticker"] == True:
@@ -2873,37 +2875,37 @@ def clientBot(op):
 							ret_ += "\n  ➧ STK_VER : {}".format(stk_ver)
 							ret_ += "\n  ➧ STK_URL : \n   line://shop/detail/{}".format(pkg_id)
 							ret_ += "\n╭━━━━━━━━━━━━━━━━╮\n┃        DOTS AUTO BOT \n╰━━━━━━━━━━━━━━━━╯"
-							dots.sendMessage(to, str(ret_))
+							client.sendMessage(to, str(ret_))
 					elif msg.contentType == 13:
 						if settings["checkContact"] == True:
 							try:
-								contact = dots.getContact(msg.contentMetadata["mid"])
-								cover = dots.getProfileCoverURL(msg.contentMetadata["mid"])
+								contact = client.getContact(msg.contentMetadata["mid"])
+								cover = client.getProfileCoverURL(msg.contentMetadata["mid"])
 								ret_ = "╭━━━━━━━━━━━━━━━━╮\n┃       DETAIL CONTACT\n╰━━━━━━━━━━━━━━━━╯"
 								ret_ += "\n ➧ Nama : {}".format(str(contact.displayName))
 								ret_ += "\n ➧ Bio : \n   {}".format(str(contact.statusMessage))
 								ret_ += "╭━━━━━━━━━━━━━━━━╮\n┃         DOTS AUTO BOT \n╰━━━━━━━━━━━━━━━━╯"
-								dots.sendMessage(to, str(ret_))
-								dots.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(str(contact.pictureStatus)))
-								dots.sendImageWithURL(to, cover)
+								client.sendMessage(to, str(ret_))
+								client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(str(contact.pictureStatus)))
+								client.sendImageWithURL(to, cover)
 							except:
-								dots.sendMessage(to, "➧ Kontak tidak valid")
+								client.sendMessage(to, "➧ Kontak tidak valid")
 					elif msg.contentType == 13:
 						if settings["checkContact"] == True:
 							try:
-								dd.findAndAddContactsByMid(target)
-								contact = dots.getContact(target)
-								cover = dots.getProfileCoverURL(target)
+								ki1.findAndAddContactsByMid(target)
+								contact = ki1.getContact(target)
+								cover = ki1.getProfileCoverURL(target)
 								ret_ = "╭━━━━━━━━━━━━━━━━╮\n┃      DETAIL CONTACT\n╰━━━━━━━━━━━━━━━━╯"
 								ret_ += "\n ➧ Nama : {}".format(str(contact.displayName))
 								ret_ += "\n ➧ MID : {}".format(str(msg.contentMetadata["mid"]))
 								ret_ += "\n ➧ Bio : \n   {}".format(str(contact.statusMessage))
 								ret_ += "\n╭━━━━━━━━━━━━━━━━╮\n┃         DOTS AUTO BOT \n╰━━━━━━━━━━━━━━━━╯"
-								dots.sendMessage(to, str(ret_))
-								dots.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(str(contact.pictureStatus)))
-								dots.sendImageWithURL(to, cover)
+								ki1.sendMessage(to, str(ret_))
+								ki1.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(str(contact.pictureStatus)))
+								ki1.sendImageWithURL(to, cover)
 							except:
-								dots.sendMessage(to, "➧ Kontak tidak valid")
+								ki1.sendMessage(to, "➧ Kontak tidak valid")
 								
 					elif msg.contentType == 16:
 						if settings["checkPost"] == True:
