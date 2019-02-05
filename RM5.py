@@ -1537,6 +1537,11 @@ def clientBot(op):
 									gs = ki3.getGroup(msg.to)
 									gs = ki4.getGroup(msg.to)
 									gs = ki5.getGroup(msg.to)
+									gs = ki6.getGroup(msg.to)
+									gs = ki7.getGroup(msg.to)
+									gs = ki8.getGroup(msg.to)
+									gs = ki9.getGroup(msg.to)
+									gs = ki10.getGroup(msg.to)
 									targets = []
 									for g in gs.members:
 										if _name in g.displayName:
@@ -1549,7 +1554,7 @@ def clientBot(op):
 													if not target in Owner:
 														if not target in admin:
 															try:
-																klist=[ki1,ki2,ki3,ki4,k5]
+																klist=[ki1,ki2,ki3,ki4,k5,k6,k7,k8,k9,k10]
 																kicker=random.choice(klist)
 																kicker.kickoutFromGroup(msg.to,[target])
 																print (msg.to,[g.mid])
