@@ -2555,17 +2555,17 @@ def clientBot(op):
 							dots.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
 							dots.sendImageWithURL(to, cover)
 						elif cmd == "myprofile":
-							contact = dots.getContact(sender)
-							cover = dots.getProfileCoverURL(sender)
+							contact = client.getContact(sender)
+							cover = client.getProfileCoverURL(sender)
 							result = "╭━━━━━━━━━━━━━━━━╮\n┃       DETAIL PROFILE\n╰━━━━━━━━━━━━━━━━╯"
 							result += "\n ➧  Display Name : \n   @!"
 							result += "\n ➧  Status Message : \n   {}".format(contact.statusMessage)
 							result += "\n╭━━━━━━━━━━━━━━━━╮\n┃         DOTS AUTO BOT \n╰━━━━━━━━━━━━━━━━╯"
-							dots.sendMention(to, result, [sender])
-							dots.sendMessage(to, "➧ Profil Picture")
-							dots.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
-							dots.sendMessage(to, "➧ Cover Picture")
-							dots.sendImageWithURL(to, cover)
+							client.sendMention(to, result, [sender])
+							client.sendMessage(to, "➧ Profil Picture")
+							client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
+							client.sendMessage(to, "➧ Cover Picture")
+							client.sendImageWithURL(to, cover)
 						elif cmd == "mymid":
 							contact = client.getContact(sender)
 							client.sendMention(to, "@!\n➧ Your Mid :\n   {}".format(contact.mid), [sender])
@@ -2576,9 +2576,9 @@ def clientBot(op):
 							contact = client.getContact(sender)
 							client.sendMention(to, "➧ @!\n➧ Your Status Message :\n   {}".format(contact.statusMessage), [sender])
 						elif cmd == "mypic":
-							contact = dots.getContact(sender)
-							dots.sendMessage(to, "➧ Your Picture Covet :")
-							dots.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
+							contact = client.getContact(sender)
+							client.sendMessage(to, "➧ Your Picture Covet :")
+							client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
 						elif cmd == "myvid":
 							contact = client.getContact(sender)
 							if contact.videoProfile == None:
