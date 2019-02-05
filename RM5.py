@@ -2667,46 +2667,46 @@ def clientBot(op):
 						
 						elif cmd == "gpic":
 							if msg.toType == 2:
-								group = dots.getGroup(to)
+								group = client.getGroup(to)
 								groupPicture = "http://dl.profile.line-cdn.net/{}".format(group.pictureStatus)
-								dots.sendMessage(to, "➧ Group Cover :")
-								dots.sendImageWithURL(to, groupPicture)
+								client.sendMessage(to, "➧ Group Cover :")
+								client.sendImageWithURL(to, groupPicture)
 						elif cmd == "gname":
 							if msg.toType == 2:
-								group = dots.getGroup(to)
-								dots.sendMessage(to, "➧ Nama Group : {}".format(group.name))
+								group = client.getGroup(to)
+								client.sendMessage(to, "➧ Nama Group : {}".format(group.name))
 						elif cmd == "gid":
 							if msg.toType == 2:
-								group = dots.getGroup(to)
-								dots.sendMessage(to, "➧ Group ID :\n   {}".format(group.id))
+								group = client.getGroup(to)
+								client.sendMessage(to, "➧ Group ID :\n   {}".format(group.id))
 						
 						elif cmd == "tag name":
 							if msg.toType == 2:
-								group = dots.getGroup(to)
+								group = client.getGroup(to)
 								num = 0
 								ret_ = "╭━━━━━━━━━━━━━━━━╮\n┃          TAG BY NAME\n┣•━━━━━━━━━━━━━━━━"
 								for contact in group.members:
 									num += 1
 									ret_ += "\n┣ {}. {}".format(num, contact.displayName)
 								ret_ += "\n┣•━━━━━━━━━━━━━━━━\n┃ Total Members : {} ".format(len(group.members)) + "\n╰━━━━━━━━━━━━━━━━╯"
-								dots.sendMessage(to, ret_)
+								client.sendMessage(to, ret_)
 						elif cmd == "pendinglist":
 							if msg.toType == 2:
-								group = dots.getGroup(to)
+								group = client.getGroup(to)
 								ret_ = "╭━━━━━━━━━━━━━━━━╮\n┃         PENDING LIST\n┣•━━━━━━━━━━━━━━━━"
 								no = 0
 								if group.invitee is None or group.invitee == []:
-									return dots.sendMessage(to, "➧ Tidak ada pendingan")
+									return client.sendMessage(to, "➧ Tidak ada pendingan")
 								else:
 									for pending in group.invitee:
 										no += 1
 										ret_ += "\n┣ {}. {}".format(str(no), str(pending.displayName))
 									ret_ += "\n┣•━━━━━━━━━━━━━━━━\n┃ Total Pending : {} ".format(str(len(group.invitee))) + "\n╰━━━━━━━━━━━━━━━━╯"
-									dots.sendMessage(to, str(ret_))
+									client.sendMessage(to, str(ret_))
 									
 									
 						elif cmd == "ginfo":
-							group = dots.getGroup(to)
+							group = client.getGroup(to)
 							try:
 								try:
 									groupCreator = group.creator.mid
@@ -2730,9 +2730,9 @@ def clientBot(op):
 								ret_ += "\n ➧ Group Qr : {}".format(groupQr)
 								ret_ += "\n ➧ Group Ticket : \n   {}".format(groupTicket)
 								ret_ += "\n╭━━━━━━━━━━━━━━━━╮\n┃         DOTS AUTO BOT \n╰━━━━━━━━━━━━━━━━╯"
-								dots.sendMention(to, str(ret_), [groupCreator])
-								dots.sendMessage(to, "➧ Group Cover Picture")
-								dots.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(group.pictureStatus))
+								client.sendMention(to, str(ret_), [groupCreator])
+								client.sendMessage(to, "➧ Group Cover Picture")
+								client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(group.pictureStatus))
 							except:
 								pass
 							
